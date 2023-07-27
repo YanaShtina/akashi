@@ -1,0 +1,31 @@
+$b: '.programm';
+
+#{$b} {
+margin-bottom: rem(180px);
+
+&__container {
+  width: rem(1146px);
+  margin: 0 auto;
+}
+
+&__title {
+  color: $p-accent-2;
+  margin-bottom: rem(32px);
+}
+
+
+&__subtitle {
+  font-family: $p-font-regular;
+  font-size: rem(16px);
+  text-align: center;
+  line-height: 120%;
+  max-width: rem(500px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: rem(80px);
+}
+
+&__list {
+  margin-bottom: rem(80px);
+}
+}

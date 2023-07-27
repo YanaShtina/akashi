@@ -37,9 +37,6 @@ $b: '.for';
     line-height: 110%;
     top: 0;
 
-    span {
-      color: $p-accent-2;
-    }
 
     &::before {
       content: '';
@@ -81,16 +78,60 @@ $b: '.for';
       bottom: 0;
       transform: translateY(-50%);
       left: initial;
-      right: 0;
+      right: rem(28px);
       width: rem(300px);
 
       &::before {
         right: initial;
-        left: rem(-22px);
-        top: 50%;
+        left: rem(-30px);
+        top: 10%;
         transform: translateY(-50%);
       }
     }
+
+    &._3 {
+      top: 50%;
+      bottom: initial;
+      transform: translateY(-50%);
+      left: initial;
+      right: rem(-18px);
+      width: rem(300px);
+
+      &::before {
+        right: initial;
+        left: rem(-30px);
+        top: 10%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &._2 {
+      top: 0;
+      bottom: initial;
+      left: initial;
+      right: rem(50px);
+      width: rem(300px);
+
+      &::before {
+        right: initial;
+        left: rem(-40px);
+        top: 100%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &._1 {
+      top: 0;
+      left: rem(75px);
+      max-width: rem(300px);
+
+      &::before {
+        top: 100%;
+        right: rem(-7px);
+        transform: translateY(-50%);
+      }
+    }
+
 
   }
 

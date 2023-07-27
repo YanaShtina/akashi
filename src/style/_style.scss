@@ -160,6 +160,8 @@ body {
   background: $p-gradient-1;
   color: #fff;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
 
 
   &-lili {
@@ -381,6 +383,10 @@ body {
   width: rem(120px);
   padding: rem(5px) rem(10px);
   border-radius: rem(50px);
+ }
+
+ .accent {
+  color: $p-accent-2;
  }
 
 
