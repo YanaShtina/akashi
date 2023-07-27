@@ -1,0 +1,101 @@
+$b: '.for';
+
+#{$b} {
+  margin-bottom: rem(180px);
+
+  &__title {
+    color: $p-accent-1;
+  }
+
+  &__img {
+    width: rem(500px);
+    height: rem(500px);
+    margin: 0 auto;
+    padding: rem(30px);
+    border: 1px dashed $p-accent-2;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: rem(80px);
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  
+  &__content {
+    position: relative;
+    width: rem(1130px);
+    margin: 0 auto;
+  }
+
+  &__item {
+    position: absolute;
+    max-width: rem(280px);
+    font-family: $p-font-regular;
+    font-size: rem(16px);
+    line-height: 110%;
+    top: 0;
+
+    span {
+      color: $p-accent-2;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: rem(13px);
+      height: rem(13px);
+      background:linear-gradient(180deg, rgba(47, 100, 184, 0.98) 23.44%, #B381E0 100%);
+      border-radius: 100%;
+    }
+
+    &._6 {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      &::before {
+        right: rem(-10px);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &._5 {
+      top: initial;
+      bottom: 0;
+      transform: translateY(-50%);
+      left: rem(147px);
+      width: rem(250px);
+
+      &::before {
+        right: rem(-10px);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &._4 {
+      top: initial;
+      bottom: 0;
+      transform: translateY(-50%);
+      left: initial;
+      right: 0;
+      width: rem(300px);
+
+      &::before {
+        right: initial;
+        left: rem(-22px);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+
+}
