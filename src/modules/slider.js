@@ -21,6 +21,7 @@ export default {
         delay: 3000,
       }, */
       fadeEffect: { crossFade: true },
+      autoHeight: true,
     });
 
 

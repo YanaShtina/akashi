@@ -1,0 +1,11 @@
+.faq {
+  margin-bottom: rem(180px);
+  &__title {
+    color: $p-accent-2;
+  }
+
+  .accordion-item {
+    position: relative;
+    padding-left: rem(25px);
+  }
+}

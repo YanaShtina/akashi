@@ -15,6 +15,11 @@ $b: '.hero';
   padding-bottom: rem(10px);
 } */
 
+&__btn {
+  margin-right: auto;
+  margin-left: 0;
+}
+
 &__left-img {
   position: absolute;
   width: rem(1074px);
@@ -62,5 +67,11 @@ $b: '.hero';
   height: auto;
   margin: 0 auto;
   margin-top: rem(80px);
+
+  svg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
 }

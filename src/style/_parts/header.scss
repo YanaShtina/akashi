@@ -3,6 +3,7 @@ $b: '.header';
 #{$b} {
   background: $p-gradient-1;
   padding: rem(15px) 0;
+  /* border-radius: rem(25px); */
   &__container {
     display: flex;
     align-items: center;

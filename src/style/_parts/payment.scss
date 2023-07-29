@@ -1,0 +1,102 @@
+.payment {
+  margin-bottom: rem(180px);
+
+  &__title {
+    color: $p-accent-2;
+    margin-bottom: rem(38px);
+  }
+
+  &__subtitle {
+    text-align: center;
+    max-width: rem(700px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem(120px);
+
+    &:nth-child(2) {
+      margin-bottom: rem(28px);
+    }
+  }
+
+  .card__list {
+    margin-bottom: rem(56px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .card__item {
+    width: calc(rem(557px) - rem(56px)*2);
+    height: calc(rem(610px) - rem(56px)*2);
+    padding: rem(56px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url('../../img/rectangle.svg');
+    background-size: 100% 100%;
+
+    &:first-child {
+      margin-right: rem(32px);
+    }
+
+    &-title {
+      font-size: rem(38px);
+      line-height: 110%;
+      font-family: $p-font-medium;
+      text-align: center;
+    }
+
+    &-bg {
+      position: absolute;
+   
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: rem(175px);
+      height: rem(175px);
+      top: 50%;
+      transform: translateY(-50%);
+
+      &._1 {
+        background-image: url('../../img/payment-1.svg');
+      }
+
+      &._2 {
+        background-image: url('../../img/payment-2.svg');
+      }
+    }
+
+    &-bottom {
+      margin-top: auto;
+      position: relative;
+    }
+
+    &-price-full {
+      position: absolute;
+      font-size: rem(22px);
+      line-height: 110%;
+      font-family: $p-font-regular;
+      color: $p-accent-2;
+      top: rem(22px);
+      left: rem(42px);
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: rem(80px);
+        height: 1px;
+        background-color: $p-accent-2;
+        top: rem(12px);
+        left: rem(-12px);
+        transform: rotate(15deg);
+      }
+    }
+
+    &-price {
+      font-size: rem(48px);
+      line-height: 110%;
+      font-family: $p-font-medium;
+      text-align: center;
+      margin-bottom: rem(24px);
+    }
+  }
+}

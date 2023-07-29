@@ -31,7 +31,7 @@ html {
 
 
 main {
-  max-width: rem(1920px);
+  max-width: rem(1600px);
   margin-right: auto;
   margin-left: auto;
 }
@@ -388,6 +388,21 @@ body {
 
  .accent {
   color: $p-accent-2;
+ }
+
+ .swiper-pagination {
+  .swiper-pagination-bullet {
+    width: rem(11px);
+    height: rem(11px);
+    background: linear-gradient(180deg, #B381E0 0%, #5FABD9 100%);
+  }
+
+  .swiper-pagination-bullet-active {
+    width: rem(35px);
+    background: linear-gradient(180deg, #B381E0 0%, #5FABD9 100%);
+    border-radius: rem(70px);
+  }
+
  }
 
 
