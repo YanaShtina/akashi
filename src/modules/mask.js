@@ -15,7 +15,7 @@ export default {
     };
 
 
-    masks.forEach((m) => {
+  /*   masks.forEach((m) => {
 
       const isBook = m.closest('.pick__confirm').classList.contains('book')
 
@@ -38,6 +38,6 @@ export default {
           }
         }) 
       }
-    })
+    }) */
   }
 }

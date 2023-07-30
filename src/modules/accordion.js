@@ -2,8 +2,6 @@ export default {
   init() {
     const items = document.querySelectorAll(".accordion button");
 
-    console.log('items', items)
-
     function toggleAccordion() {
       const itemToggle = this.getAttribute('aria-expanded');
 

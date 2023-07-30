@@ -54,14 +54,20 @@
     }
   }
 
+.swiper {
+  overflow: visible !important;
+}
+
 .swiper-button-prev {
+  top: rem(500px);
   left: rem(56px);
-  color: $p-accent-2;
+  color: #5FABD9;
 }
 
 .swiper-button-next {
+  top: rem(500px);
   right: rem(56px);
-  color: $p-accent-2;
+  color: #5FABD9;
 }
 
 .swiper-pagination {

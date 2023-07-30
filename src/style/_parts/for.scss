@@ -43,7 +43,7 @@ $b: '.for';
       position: absolute;
       width: rem(13px);
       height: rem(13px);
-      background:linear-gradient(180deg, rgba(47, 100, 184, 0.98) 23.44%, #B381E0 100%);
+      background: linear-gradient(180deg, #5FABD9 23.44%, #B381E0 100%);;
       border-radius: 100%;
     }
 
@@ -114,7 +114,7 @@ $b: '.for';
 
       &::before {
         right: initial;
-        left: rem(-40px);
+        left: rem(-36px);
         top: 100%;
         transform: translateY(-50%);
       }
@@ -127,7 +127,7 @@ $b: '.for';
 
       &::before {
         top: 100%;
-        right: rem(-7px);
+        right: rem(-9px);
         transform: translateY(-50%);
       }
     }
