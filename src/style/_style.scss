@@ -132,6 +132,7 @@ body {
     font-family: $p-font-title;
     font-size: rem(28px);
     line-height: rem(34px);
+    margin-bottom: rem(36px);
   }
 }
 
@@ -188,12 +189,15 @@ body {
   }
 
 
-/*   @include mobile {
-    width: rem(158px);
-    height: rem(36px);
+ @include mobile {
+    width: rem(215px);
+    width: 100%;
+    height: rem(35px);
+    font-family: $p-font-medium;
     font-size: rem(14px);
-    line-height: rem(20px);
-  } */
+    line-height: 110%;
+    text-transform: none;
+  } 
 
 
   &:hover {
@@ -267,12 +271,19 @@ body {
   }
 }
 
+.desc {
+  @include mobile {
+    display: none;
+  }
+}
 
+.mob {
+  display: none;
 
-
-
-
-
+  @include mobile {
+    display: block;
+  }
+}
 
 .burger {
   width: rem(70px);

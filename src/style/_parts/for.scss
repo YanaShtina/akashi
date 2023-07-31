@@ -3,6 +3,10 @@ $b: '.for';
 #{$b} {
   margin-bottom: rem(180px);
 
+  @include mobile {
+    margin-bottom: rem(80px);
+  }
+
   &__title {
     color: $p-accent-1;
   }
@@ -21,12 +25,30 @@ $b: '.for';
       width: 100%;
       object-fit: contain;
     }
+
+    @include mobile {
+      display: none;
+    }
   }
   
   &__content {
     position: relative;
     width: rem(1130px);
     margin: 0 auto;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__list {
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: rem(32px);
+    }
+
   }
 
   &__item {
@@ -45,6 +67,23 @@ $b: '.for';
       height: rem(13px);
       background: linear-gradient(180deg, #5FABD9 23.44%, #B381E0 100%);;
       border-radius: 100%;
+
+      @include mobile {
+        width: rem(8px);
+        height: rem(8px);
+        top: 0;
+      }
+    }
+
+    @include mobile {
+      position: relative;
+      top: initial;
+      right: initial;
+      left: initial;
+      font-size: rem(14px);
+      padding-left: rem(16px);
+      margin-bottom: rem(24px);
+      letter-spacing: 0;
     }
 
     &._6 {
@@ -56,6 +95,19 @@ $b: '.for';
         right: rem(-10px);
         top: 50%;
         transform: translateY(-50%);
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: translateY(0);
       }
     }
 
@@ -70,6 +122,19 @@ $b: '.for';
         right: rem(-10px);
         top: 50%;
         transform: translateY(-50%);
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: translateY(0);
       }
     }
 
@@ -86,6 +151,21 @@ $b: '.for';
         left: rem(-30px);
         top: 10%;
         transform: translateY(-50%);
+      
+        
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: translateY(0);
       }
     }
 
@@ -102,6 +182,21 @@ $b: '.for';
         left: rem(-30px);
         top: 10%;
         transform: translateY(-50%);
+      
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: translateY(0);
       }
     }
 
@@ -117,6 +212,20 @@ $b: '.for';
         left: rem(-36px);
         top: 100%;
         transform: translateY(-50%);
+      
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: translateY(0);
       }
     }
 
@@ -129,6 +238,19 @@ $b: '.for';
         top: 100%;
         right: rem(-9px);
         transform: translateY(-50%);
+
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
       }
     }
 

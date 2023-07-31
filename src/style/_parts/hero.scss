@@ -2,6 +2,10 @@ $b: '.hero';
 
 #{$b} {
   margin-bottom: rem(180px);
+
+  @include mobile {
+    margin-bottom: rem(56px);
+  }
 &__container  {
   display: flex;
   align-items: flex-end;
@@ -11,13 +15,21 @@ $b: '.hero';
   position: relative;
 }
 
-/* &__left {
-  padding-bottom: rem(10px);
-} */
-
 &__btn {
   margin-right: auto;
   margin-left: 0;
+  background: $p-gradient-1;
+
+
+  &:hover {
+    background: $p-gradient-1-hover;
+  }
+
+  
+
+  @include mobile {
+    width: rem(175px);
+  }
 }
 
 &__left-img {
@@ -27,10 +39,23 @@ $b: '.hero';
   top: rem(78px);
   left: rem(48px);
 
+  @include mobile {
+    width: rem(240px);
+    height: rem(70px);
+    top: rem(46px);
+    left: rem(16px);
+  }
+
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+}
+
+&__left-text {
+  @include mobile {
+    padding-top: rem(130px);
   }
 }
 
@@ -39,9 +64,23 @@ $b: '.hero';
   font-size: rem(28px);
   line-height: 110%;
 
+  @include mobile {
+
+    &._mob {
+      width: rem(140px);
+    }
+    font-family: $p-font-regular;
+    font-size: rem(18px);
+  }
+
   &:nth-child(3) {
     margin-bottom: rem(26px);
+
+    @include mobile {
+      margin-bottom: rem(8px);
+    }
   }
+
 }
 
 &__left-text-title {
@@ -50,16 +89,37 @@ $b: '.hero';
   font-size: rem(48px);
   line-height: 110%;
   margin-bottom: rem(26px);
+
+  @include mobile {
+    font-family: $p-font-bold;
+    font-size: rem(18px);
+    margin-bottom: rem(48px);
+  }
 }
 
 &__right {
   width: rem(505px);
   height: rem(700px);
 
+  @include mobile {
+    width: rem(156px);
+    height: rem(235px);
+    position: absolute;
+    top: rem(56px);
+    right: rem(16px);
+    z-index: -1;
+  }
+
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+
+    @include mobile {
+      width: rem(156px);
+      height: rem(235px);
+    }
+  
   }
 }
 &__scroll {
@@ -67,6 +127,11 @@ $b: '.hero';
   height: auto;
   margin: 0 auto;
   margin-top: rem(80px);
+
+  @include mobile {
+    width: rem(16px);
+    margin-top: rem(42px);
+  }
 
   svg {
     width: 100%;

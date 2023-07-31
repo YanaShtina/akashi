@@ -24,6 +24,11 @@ $blue: #03b5d2;
     background: none;
     outline: none;
 
+    @include mobile {
+      font-size: rem(14px);
+      padding: rem(16px) 0;
+    }
+
     &:hover, &:focus {
       cursor: pointer;
       color: $p-accent-2;;
@@ -48,6 +53,10 @@ $blue: #03b5d2;
       font-size: rem(18px);
       line-height: 110%;
       font-family: $p-font-medium;
+
+      @include mobile {
+        font-size: rem(16px);
+      }
     }
     .icon {
       display: flex;
@@ -62,6 +71,11 @@ $blue: #03b5d2;
       border-radius: 100%;
       color: $lightgray;
       transition: all 0.3s ease-in;
+
+      @include mobile {
+        width: rem(15px);
+        height: rem(15px);
+      }
       &::before {
         transition: all 0.3s ease-in;
         display: block;
@@ -73,6 +87,11 @@ $blue: #03b5d2;
         width: rem(12px);
         height: rem(1.5px);
         background: $lightgray;
+
+        @include mobile  {
+          width: rem(8px);
+          height: rem(1px);
+        }
       }
       &::after {
         transition: all 0.3s ease-in;
@@ -85,6 +104,11 @@ $blue: #03b5d2;
         width: rem(1.5px);
         height: rem(12px);
         background: $lightgray;
+
+        @include mobile  {
+          width: rem(1px);
+          height: rem(8px);
+        }
       }
     }
   }

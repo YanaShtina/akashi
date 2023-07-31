@@ -7,6 +7,7 @@ import slider  from './modules/slider';
 import select  from './modules/itc-custom-select';
 import form  from './modules/form';
 import burger  from './modules/burger';
+import random  from './modules/random';
 
 
 
@@ -18,6 +19,7 @@ accordion.init();
 slider.init();
 select.init();
 burger.init();
+random.init();
 
 
 

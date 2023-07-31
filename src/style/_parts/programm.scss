@@ -3,14 +3,27 @@ $b: '.programm';
 #{$b} {
 margin-bottom: rem(180px);
 
+@include mobile {
+  margin-bottom: rem(80px);
+}
+
+
 &__container {
   width: rem(1146px);
   margin: 0 auto;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 &__title {
   color: $p-accent-2;
   margin-bottom: rem(32px);
+
+  @include mobile {
+    margin-bottom: rem(24px);
+  }
 }
 
 
@@ -23,9 +36,19 @@ margin-bottom: rem(180px);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: rem(80px);
+
+  @include mobile {
+    font-size: rem(14px);
+    margin-bottom: rem(32px);
+  }
 }
 
 &__list {
   margin-bottom: rem(80px);
+
+  @include mobile {
+    margin-bottom: rem(32px);
+  }
+
 }
 }
