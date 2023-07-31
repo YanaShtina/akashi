@@ -6,6 +6,7 @@ import accordion  from './modules/accordion';
 import slider  from './modules/slider';
 import select  from './modules/itc-custom-select';
 import form  from './modules/form';
+import burger  from './modules/burger';
 
 
 
@@ -16,7 +17,7 @@ mask.init();
 accordion.init();
 slider.init();
 select.init();
-form.init();
+burger.init();
 
 
 

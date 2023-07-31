@@ -7,7 +7,8 @@ export default {
     const TOKEN = '6595993359:AAH6IIhXxG75Hht09D8huHAf5Z1EmEBPlk8';
     const CHAT_ID = '-1001815654992';
     const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
-    https://api.telegram.org/bot123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11/getMe
+
+    
     
 
     formMain.addEventListener('submit', function(e) {

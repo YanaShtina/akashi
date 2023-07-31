@@ -2,6 +2,9 @@
   position: relative;
   width: rem(103px);
 
+  @include mobile {
+   /*  width: rem(70px); */
+  }
 }
 
 .itc-select__toggle {
@@ -18,6 +21,11 @@
   cursor: pointer;
   user-select: none;
   color: #722086;
+
+  @include mobile {
+    /* padding: rem(8px) rem(12px); */
+    font-size: rem(14px);
+  }
 }
 
 .itc-select__toggle::after {
@@ -28,6 +36,11 @@
   background-image: url('../../img/down-arrow.svg');
   background-size: contain;
   content: "";
+
+  @include mobile  {
+    width: rem(12px);
+    height:rem(8px);
+  }
 }
 
 .itc-select__toggle:focus {

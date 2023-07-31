@@ -1,0 +1,47 @@
+
+
+<div class="popup__bg main"> 
+  <div class="popup ">
+  <img src="../img/close.svg" class="close-popup">
+      <div class="popup__content">
+          <div class="popup__title h3">Оставить заявку</div>
+
+          <div class="popup__subtitle">Наш менеджер свяжется с вами в ближайшее время</div>
+
+          
+
+          <div class="popup__form-wrap ">
+            <form class="popup__form toSend" action="POST">
+              <div class="popup__input-wrap input-wrap _name">
+                <div class="error-text">введите имя </div>
+                <span> </span>
+                <input class="popup__input input"  required name='popupName' type="text" placeholder="Вашe имя">
+              </div>
+
+              <div class="popup__input-wrap input-wrap _tel">
+                <div class="error-text">некорректный номер </div>
+                <span> </span>
+                <input class="popup__input input js-tel " name='popupTel'  type="text" placeholder="Ваш номер телефона" required>
+              </div>
+        
+              <div class="form__bottom">
+                <div class="checkbox-wrap">
+                  <div class="policy__checkbox">
+                    <input id="p" class="checkbox" name='1'  type="checkbox" checked>
+                    <label for="p">
+                      Ознакомлен(а) с условиями <a href="policy.html">политики конфиденциальности</a>
+                    </label>
+                  </div>
+                  <span class = 'check-policy'>Ознакомьтесь с условиями политики конфиденциальности выше</span>
+                </div>
+              
+                <button class="btn form__btn" type='submit'>ОСТАВИТЬ ЗАЯВКУ</button>
+
+                <div class='form__sended'>Спасибо, сообщение отправлено</div>
+              </div>
+            </form>
+          </div>
+  
+      </div>
+  </div>
+</div> 

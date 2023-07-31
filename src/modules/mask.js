@@ -15,12 +15,12 @@ export default {
     };
 
 
-  /*   masks.forEach((m) => {
+   masks.forEach((m) => {
 
-      const isBook = m.closest('.pick__confirm').classList.contains('book')
+      // const isBook = m.closest('.pick__confirm').classList.contains('book')
 
 
-      if (!isBook) {
+      // if (!isBook) {
         const mask = IMask(m, maskOptions);
         console.log('mask.masked.isComplete', mask.masked.isComplete);
 
@@ -37,7 +37,7 @@ export default {
             complited = false
           }
         }) 
-      }
-    }) */
+      // }
+    }) 
   }
 }

@@ -80,7 +80,7 @@
           </svg>
         </div>
       </section>
-  
+  <!-- 
       <section class="for">
         <div class="for__container container">
           <h2 class="for__title h2">Этот курс для тебя, если</h2>
@@ -712,7 +712,7 @@
                 <div class="card__item-price-full">400 €</div>
               <div class="card__item-price">350 €</div>
 
-              <button class="btn btn-blue card__btn">Оставить заявку</button></div>
+              <button class="btn btn-blue card__btn open-popup" data-type='main'>Оставить заявку</button></div>
 
            
             </div>
@@ -725,9 +725,9 @@
 
 
               <div class="card__item-bottom">   
-              <div class="card__item-price">400 €</div>
+              <div class="card__item-price" >400 €</div>
 
-              <button class="btn btn-blue card__btn">Оставить заявку</button></div>
+              <button class="btn btn-blue card__btn open-popup" data-type='main'>Оставить заявку</button></div>
 
            
             </div>
@@ -743,20 +743,24 @@
           <div class="contacts__inner">
             <div class="contacts__form">
               <form class="form form__main" id="form__main">
-                <div class="input-wrap">
+                <div class="input-wrap error">
                   <input class="input" type="text" placeholder="Имя" name="name">
+                  <div class="error-text">Укажите имя</div>
                 </div>
 
                 <div class="input-wrap">
                   <input class="input js-tel" type="text" placeholder="Номер телефона" name="tel">
+                  <div class="error-text">Добавьте свой номер</div>
                 </div>
 
                 <div class="input-wrap">
                   <input class="input" type="text" placeholder="Ссылка в соц. сет" name="link">
+                  <div class="error-text">Добавьте свою ссылку в интаграм</div>
                 </div>
 
                 <div class="input-wrap">
                   <textarea class="input _textarea" name="txt" id="" rows="4" cols="50" placeholder="Вопрос"></textarea>
+                  <div class="error-text">Напишите свой вопрос</div>
                 </div>
 
                 <div class="checkbox-wrap">
@@ -793,10 +797,10 @@
         </div>
       </section>
 
+-->
+    </main> 
 
-    </main>
-
-    <footer class="footer">
+<!--     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__logo">
           <svg width="73" height="77" viewBox="0 0 73 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -812,7 +816,37 @@
 
         <a class="footer__dev-link" href="https://t.me/s_iana" target="_blank">Разработка сайта  Yana Aydin</a>
       </div>
-    </footer>
+    </footer> -->
+
+    <div class="popup__bg main"> 
+      <div class="popup ">
+      <img src="../img/close.svg" class="close-popup">
+          <div class="popup__content">
+              <div class="popup__title">Оставить заявку</div>
+            
+
+              <div class="popup__warning">Перед зачислением на курс я смотрю каждого <span class="accent">индивидуально на степень открытости способностей</span>, и&#160;подходит ли вам этот курс. <br> <br>
+                Прикрепите свое фото в сообщении - я посмотрю ваше поле и&#160;дам обратную связь.</div>
+
+                <div class="popup__subtitle">Выберите социальную сеть</div>
+
+              <div class="contacts__social-list">
+                <a class="contacts__social-item _insta" href="https://www.instagram.com/tiktak_psychology" target="_blank" >
+                </a>
+
+                <a class="contacts__social-item _tel" href="https://t.me/mary_yem" target="_blank" >
+                </a>
+
+                <a class="contacts__social-item _wapp" href="https://api.whatsapp.com/send?phone=380662191346" target="_blank">
+                </a>
+              </div>
+
+             
+    
+      
+          </div>
+      </div>
+    </div> 
 
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </body>
