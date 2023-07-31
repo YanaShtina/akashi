@@ -43,6 +43,7 @@ $b: '.header';
     align-items: center;
 
     .nav__item {
+      font-family: $p-font-medium;
       color: #fff;
       font-size: rem(18px);
       margin-right: rem(20px);
@@ -86,6 +87,7 @@ $b: '.header';
 
   &__select {
     color: #fff;
+    display: none;
   }
 
   @include mobile {

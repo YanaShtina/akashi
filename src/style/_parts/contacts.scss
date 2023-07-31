@@ -1,8 +1,13 @@
 .contacts {
   margin-bottom: rem(80px);
+
+  @include mobile {
+    margin-bottom: rem(40px);
+  }
+
   &__title {
     color: $p-accent-2;
-    margin-bottom: rem(16px);
+    margin-bottom: rem(16px) !important;
   }
 
   &__subtitle {
@@ -10,6 +15,11 @@
     line-height: 110%;
     text-align: center;
     margin-bottom: rem(56px);
+
+    @include mobile {
+      font-size: rem(18px);
+      margin-bottom: rem(32px);
+    }
   }
 
   &__inner {
@@ -75,4 +85,11 @@
     height: rem(264px);
     display: none;
   }
+
+  .contacts__social-item {
+    width: rem(40px);
+    height: rem(40px);
+  }
+
+
 }

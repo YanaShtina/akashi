@@ -31,8 +31,8 @@ backdrop-filter: blur(7px);
   transition: 0.5s all;
 
   @include mobile {
-    width: rem(323px);
-    padding: rem(24px);
+    width: rem(300px);
+    padding: rem(16px);
   }
 
   .input-wrap {
@@ -87,62 +87,15 @@ backdrop-filter: blur(7px);
   flex-direction: column;
   align-items: center;
 
-  .form__bottom {
-    width: 100%;
-  }
-}
-
-.popup__form-wrap {
- width: 100%;
-}
-
-.popup__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @include mobile {
-    flex-direction: column;
-  }
-
-  &.sended {
-    .form__sended {
-      display: block;
-    }
-
-    .popup__btn {
-      display: none;
-    }
+  .contacts__social-item {
+    width: rem(40px);
+    height: rem(40px);
   }
 }
 
 
-.popup__input-wrap {
-  width: 100%;
-
-  @include mobile {
-    margin-bottom: rem(10px);
-  }
-
-  .error-text {
-    display: none;
-  }
-
-  &.error {
-    
-    .error-text {
-      color: red;
-      display: block;
-    }
-  }
-
-  
-}
 
 
-.popup__btn {
-  width: 100%;
-  margin-top: rem(12px);
-}
 
 
 

@@ -1,5 +1,9 @@
 .faq {
   margin-bottom: rem(180px);
+
+  @include mobile {
+    margin-bottom: rem(80px);
+  }
   &__title {
     color: $p-accent-2;
   }
@@ -7,5 +11,10 @@
   .accordion-item {
     position: relative;
     padding-left: rem(25px);
+
+    @include mobile {
+      padding-left: 0;
+      padding-right: rem(25px);
+    }
   }
 }

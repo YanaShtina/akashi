@@ -39,6 +39,12 @@ module.exports = {
     extensions: ['.Webpack.js', '.web.js', '.ts', '.js', '.tsx']
   },
   plugins: [
+/*     new HtmlWebpackPlugin({
+      filename: 'index.html',
+      inject: 'body',
+      template: 'nunjucks-html-loader!./src/templates/index.html',
+    }),  */
+
     new HtmlWebpackPlugin({
       filename: 'index.html',
       inject: 'body',
