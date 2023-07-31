@@ -434,6 +434,34 @@ body {
 
  }
 
+ .swiper-pagination-mob {
+  display: none;
+  position: absolute;
+  top: rem(48px) !important;
+  left: 50% !important;
+  right: initial !important;
+  bottom: initial !important;
+  transform: translateX(-50%);
+  height: max-content;
+  width: max-content !important;
+
+  @include mobile {
+    display: flex;
+  }
+
+  .swiper-pagination-bullet {
+    width: rem(11px);
+    height: rem(11px);
+    background: linear-gradient(180deg, #B381E0 0%, #5FABD9 100%);
+  }
+
+  .swiper-pagination-bullet-active {
+    width: rem(35px);
+    background: linear-gradient(180deg, #B381E0 0%, #5FABD9 100%);
+    border-radius: rem(70px);
+  }
+ }
+
 
 
 

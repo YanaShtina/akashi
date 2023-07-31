@@ -25,5 +25,22 @@ export default {
     });
 
 
+    const swiperMob = new Swiper('.swiper-mob', {
+      modules: [Navigation, Pagination, Autoplay, EffectFade],
+      speed: 900,
+
+      pagination: {
+        el: '.swiper-pagination-mob',
+        clickable: true,
+      },
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: false,
+      autoHeight: true,
+    });
+
+    
+
+
   }
 }

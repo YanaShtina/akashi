@@ -1,8 +1,19 @@
 .reviews  {
   margin-bottom: rem(180px);
   position: relative;
+
+  @include mobile {
+    margin-bottom: rem(80px);
+    overflow: hidden;
+  }
+
+  
   &__title {
     color: $p-accent-2;
+
+    @include mobile {
+      margin-bottom: rem(56px);
+    }
   }
 
   &__list {
@@ -56,26 +67,70 @@
 
 .swiper {
   overflow: visible !important;
+
+  &.desc {
+    @include mobile {
+      display: none;
+    }
+  }
 }
 
 .swiper-button-prev {
   top: rem(500px);
   left: rem(56px);
   color: #5FABD9;
+
+  &.desc {
+    @include mobile {
+      display: none;
+    }
+  }
 }
 
 .swiper-button-next {
   top: rem(500px);
   right: rem(56px);
   color: #5FABD9;
+
+  &.desc {
+    @include mobile {
+      display: none;
+    }
+  }
 }
 
 .swiper-pagination {
   top: rem(120px);
   height: max-content;
+
+  &.desc {
+    @include mobile {
+      display: none;
+    }
+  }
 }
 
 .swiper-button-prev:after, .swiper-button-next:after {
   font-size: rem(36px);
+}
+
+.swiper-mob {
+  display: none;
+  overflow: hidden !important;
+  position: relative;
+  
+
+  @include mobile {
+    display: block;
+  }
+
+  .reviews__item {
+    margin-right: 0;
+    width: calc(100% - rem(30px));
+  }
+
+  .swiper-wrapper {
+    // height: 100% !important;
+  }
 }
 }
