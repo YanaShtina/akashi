@@ -51,6 +51,18 @@ $b: '.hero';
     height: 100%;
     object-fit: contain;
   }
+
+  &.ukr {
+    width: rem(1074px);
+    height: rem(320px);
+
+    @include mobile {
+      width: rem(240px);
+      height: rem(70px);
+      top: rem(46px);
+      left: 0;
+    }
+  }
 }
 
 &__left-text {
@@ -63,6 +75,7 @@ $b: '.hero';
   font-family: $p-font-medium;
   font-size: rem(28px);
   line-height: 110%;
+ 
 
   @include mobile {
 
@@ -71,13 +84,17 @@ $b: '.hero';
     }
     font-family: $p-font-regular;
     font-size: rem(18px);
+    
+   
   }
 
-  &:nth-child(3) {
-    margin-bottom: rem(26px);
+  &:nth-child(4) {
+    margin-bottom: rem(12px);
+    margin-top: rem(26px);
 
     @include mobile {
       margin-bottom: rem(8px);
+      margin-top: rem(48px);
     }
   }
 
@@ -88,12 +105,12 @@ $b: '.hero';
   font-family: $p-font-bold;
   font-size: rem(48px);
   line-height: 110%;
-  margin-bottom: rem(26px);
+  // margin-bottom: rem(26px);
 
   @include mobile {
     font-family: $p-font-bold;
     font-size: rem(18px);
-    margin-bottom: rem(48px);
+    // margin-bottom: rem(48px);
   }
 }
 

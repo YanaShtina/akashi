@@ -91,5 +91,27 @@
     height: rem(40px);
   }
 
+  &__info {
+    font-size: rem(16px);
+    line-height: 120%;
+    margin-top: rem(32px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0;
+
+    @include mobile {
+      font-size: rem(14px);
+    }
+  }
+
+  &__info-item {
+    display: flex;
+    
+    span {
+      font-family: $p-font-medium;
+    }
+  }
+
 
 }
