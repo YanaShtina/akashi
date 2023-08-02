@@ -62,6 +62,7 @@ export default {
     
       _onClick(e) {
         const { target } = e;
+        console.log('_onClick', target)
         const type = target.closest(this.constructor.DATA).dataset.select;
         if (type === 'toggle') {
           this.toggle();
@@ -161,13 +162,13 @@ export default {
     const select1 = new ItcCustomSelect('#select-1');
     const options = document.querySelectorAll('.itc-select__option');
 
-    const isUkr =  window.location.pathname === '/ukr.html';
+    const isUkr =  window.location.pathname === '/rus.html';
 
     if (isUkr) {
       const btn = document.querySelector('.itc-select__toggle');
       btn.dataset.index = '1';
-      btn.dataset.value = 'ukr';
-      btn.textContent = 'Ukr';
+      btn.dataset.value = 'rus';
+      btn.textContent = 'rus';
       
     }
     console.log('isUkr', isUkr);
@@ -186,18 +187,5 @@ export default {
         }
       })
     })
- 
-
-/*     select1.addEventListener('itc.select.change', (e) => {
-      const btn = e.target.querySelector('.itc-select__toggle');
-      // выбранное значение
-      console.log(`Выбранное значение: ${btn.value}`);
-        // индекс выбранной опции
-      console.log(`Индекс выбранной опции: ${btn.dataset.index}`);
-      // выбранный текст опции
-      const selected = e.target.querySelector('.itc-select__option_selected');
-      const text = selected ? selected.textContent : '';
-      console.log(`Выбранный текст опции: ${text}`);
-    }); */
   }
 }
