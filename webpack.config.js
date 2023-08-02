@@ -39,11 +39,6 @@ module.exports = {
     extensions: ['.Webpack.js', '.web.js', '.ts', '.js', '.tsx']
   },
   plugins: [
-/*     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      inject: 'body',
-      template: 'nunjucks-html-loader!./src/templates/index.html',
-    }),  */
 
     new HtmlWebpackPlugin({
       filename: 'index.html',
@@ -55,6 +50,12 @@ module.exports = {
       filename: 'policy.html',
       inject: 'body',
       template: 'nunjucks-html-loader!./src/templates/policy.html',
+    }), 
+
+    new HtmlWebpackPlugin({
+      filename: 'ukr.html',
+      inject: 'body',
+      template: 'nunjucks-html-loader!./src/templates/ukr.html',
     }), 
 
     new MiniCssExtractPlugin({

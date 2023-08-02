@@ -49,6 +49,12 @@ $b: '.for';
       margin-bottom: rem(32px);
     }
 
+    &.ukr {
+      .for__item._4 {
+        right: rem(48px);
+      }
+    }
+
   }
 
   &__item {

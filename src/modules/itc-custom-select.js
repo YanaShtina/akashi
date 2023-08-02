@@ -159,5 +159,45 @@ export default {
     
     ItcCustomSelect.hideOpenSelect();
     const select1 = new ItcCustomSelect('#select-1');
+    const options = document.querySelectorAll('.itc-select__option');
+
+    const isUkr =  window.location.pathname === '/ukr.html';
+
+    if (isUkr) {
+      const btn = document.querySelector('.itc-select__toggle');
+      btn.dataset.index = '1';
+      btn.dataset.value = 'ukr';
+      btn.textContent = 'Ukr';
+      
+    }
+    console.log('isUkr', isUkr);
+
+    options.forEach((opt) => {
+      opt.addEventListener('click', () => {
+        console.log('select1', opt.dataset.value);
+  
+        if (opt.dataset.value === 'rus') {
+          window.location.pathname = '/'
+        } else if (opt.dataset.value === 'ukr') {
+          console.log(' else if',  window.location.pathname);
+          window.location.pathname = '/ukr.html'
+        } else {
+          window.location.pathname = '/'
+        }
+      })
+    })
+ 
+
+/*     select1.addEventListener('itc.select.change', (e) => {
+      const btn = e.target.querySelector('.itc-select__toggle');
+      // выбранное значение
+      console.log(`Выбранное значение: ${btn.value}`);
+        // индекс выбранной опции
+      console.log(`Индекс выбранной опции: ${btn.dataset.index}`);
+      // выбранный текст опции
+      const selected = e.target.querySelector('.itc-select__option_selected');
+      const text = selected ? selected.textContent : '';
+      console.log(`Выбранный текст опции: ${text}`);
+    }); */
   }
 }

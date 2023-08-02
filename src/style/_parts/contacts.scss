@@ -87,14 +87,19 @@
   }
 
   .contacts__social-item {
-    width: rem(40px);
-    height: rem(40px);
+    width: rem(60px);
+    height: rem(60px);
+
+    @include mobile {
+      width: rem(40px);
+      height: rem(40px);
+    }
   }
 
   &__info {
     font-size: rem(16px);
     line-height: 120%;
-    margin-top: rem(32px);
+    margin-top: rem(48px);
     display: flex;
     flex-direction: column;
     align-items: center;

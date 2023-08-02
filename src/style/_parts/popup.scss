@@ -88,8 +88,13 @@ backdrop-filter: blur(7px);
   align-items: center;
 
   .contacts__social-item {
-    width: rem(40px);
-    height: rem(40px);
+    width: rem(60px);
+    height: rem(60px);
+
+    @include mobile {
+      width: rem(40px);
+      height: rem(40px);
+    }
   }
 }
 

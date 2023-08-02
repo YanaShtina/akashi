@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/svg" href="../img/favicon.svg"/>
   <title>Akashi</title>
 </head>
 <body>
@@ -17,18 +18,17 @@
   
         <nav class="header__nav nav__list ">
           <div class="nav__item js-scroll" data-target="for"> Для кого</div>
-          <div class="nav__item js-scroll" data-target="programm"> Програма</div>
-          <div class="nav__item js-scroll" data-target="reviews"> Відгуки</div>
-          <div class="nav__item js-scroll" data-target="payment"> Вартість</div>
-          <div class="nav__item js-scroll" data-target="about"> Про автора</div>
-          <div class="nav__item js-scroll" data-target="contacts"> Контакти</div>
+          <div class="nav__item js-scroll" data-target="programm"> Программа</div>
+          <div class="nav__item js-scroll" data-target="reviews"> Отзывы</div>
+          <div class="nav__item js-scroll" data-target="payment"> Стоимость</div>
+          <div class="nav__item js-scroll" data-target="contacts"> Контакты</div>
         </nav>
   
         <div class="header__select">
         <!-- Изначально не активна ни одна опция -->
           <div class="itc-select" id="select-1">
           <!-- Кнопка для открытия выпадающего списка -->
-            <button type="button" class="itc-select__toggle" name="car" value="rus" data-select="toggle" data-index="0">Rus</button>
+            <button type="button" class="itc-select__toggle" name="lang" value="rus" data-select="toggle" data-index="0">Rus</button>
             <!-- Выпадающий список -->
             <div class="itc-select__dropdown">
             <ul class="itc-select__options">
@@ -51,29 +51,29 @@
       <section class="hero">
         <div class="hero__container container">
           <div class="hero__left">
-            <div class="hero__left-img ukr">
-              <img class="desc" src="../img/hero-title-ukr.png" alt="">
-              <img class="mob" src="../img/hero-title-ukr-mob.png" alt="">
+            <div class="hero__left-img rus">
+              <img class="desc" src="../img/hero-title-rus-desk.png" alt="хроники">
+              <img class="mob" src="../img/hero-title-rus-mob.png" alt="хроники">
             </div>
   
             <div class="hero__left-text">
-              <div class="hero__left-text-order">Авторський курс</div>
+              <div class="hero__left-text-order">Авторский курс</div>
             
              
-              <div class="hero__left-text-title">Марини Ємцової</div>
-              <div class="hero__left-text-order">«Цілитель Акаші»</div>
+              <div class="hero__left-text-title">Марины Емцовой</div>
+              <div class="hero__left-text-order">«Целитель Акаши»</div>
   
-              <div class="hero__left-text-order _mob"> Старт курсу 26&#160;серпня&#160;2023</div>
-              <button class="btn btn-blue hero__btn js-scroll" data-target="programm"> Програма</button>
+              <div class="hero__left-text-order _mob"> Старт курса 26&#160;сентрября&#160;2023</div>
+              <button class="btn btn-blue hero__btn js-scroll" data-target="programm">Программа</button>
             </div>
           </div>
           <div class="hero__right">
-            <img class="desc" src="../img/hero-img.png" alt="">
-            <img class="mob" src="../img/hero-img-mob.png" alt="">
+            <img class="desc" src="../img/hero-img.png" alt="Марина Емцова">
+            <img class="mob" src="../img/hero-img-mob.png" alt="Марина Емцова">
           </div>
         </div>
   
-        <div class="hero__scroll">
+        <div class="hero__scroll js-scroll" data-target="for">
           <svg width="31" height="42" viewBox="0 0 31 42" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9982 0.136776C7.38083 1.03488 2.71517 4.74049 0.82906 9.8018C0.64306 10.3009 0.380375 11.1815 0.245389 11.7587C0.00206631 12.7992 0 12.8766 0 20.996C0 29.1154 0.00206631 29.1927 0.245389 30.2332C1.68031 36.368 6.6278 40.8571 13.0526 41.8539C14.3055 42.0483 16.6884 42.0488 17.9506 41.8549C21.3801 41.3282 24.5057 39.7487 26.8623 37.3512C28.8056 35.3743 30.1101 32.9887 30.7546 30.2332C30.9979 29.1927 31 29.1154 31 20.996C31 12.8766 30.9979 12.7992 30.7546 11.7587C29.3204 5.62695 24.3557 1.12067 17.9506 0.136981C16.7621 -0.0456262 14.1396 -0.0456261 12.9982 0.136776ZM18.2737 2.2605C22.3306 3.03883 25.8824 5.72891 27.6797 9.38447C28.1775 10.3968 28.4842 11.3497 28.7113 12.5897C28.9601 13.9471 28.9601 28.0448 28.7113 29.4022C27.7569 34.6124 23.6402 38.6722 18.2193 39.7493C16.7525 40.0407 14.4779 40.0673 13.0872 39.8091C10.3027 39.2922 8.0836 38.1791 6.07992 36.2943C3.98551 34.3242 2.78826 32.1483 2.2878 29.4022C2.04056 28.0462 2.04056 13.9457 2.2878 12.5897C2.76727 9.95876 3.93765 7.76922 5.8888 5.85271C8.11624 3.66482 11.0167 2.34784 14.3579 2.00724C15.1851 1.92299 17.19 2.05266 18.2737 2.2605ZM14.4123 11.8544V17.4409L12.0193 15.1768L9.62632 12.9127L8.86502 13.6336L8.10384 14.3543L11.5826 17.6471C14.9982 20.8801 15.0692 20.9398 15.5 20.9398C15.9308 20.9398 16.0018 20.8801 19.4174 17.6471L22.8962 14.3543L22.135 13.6336L21.3737 12.9127L18.9807 15.1768L16.5877 17.4409V11.8544V6.26788H15.5H14.4123V11.8544Z" fill="url(#paint0_linear_251_534)"/>
             <defs>
@@ -88,188 +88,188 @@
 
       <section class="for">
         <div class="for__container container">
-          <h2 class="for__title h2">Цей курс для тебе, якщо</h2>
+          <h2 class="for__title h2">Этот курс для тебя, если</h2>
   
           <div class="for__content">
   
             <div class="for__img">
-              <img src="../img/circle.png" alt="">
+              <img src="../img/circle.png" alt="circle" loading="lazy">
             </div>
             <div class="for__list">
-              <div class="for__item _1">Ти <span class="accent">психолог,</span>&#32;і хочеш посилити раппорт з клієнтом, читати клієнта, як відкриту книгу, <span class="accent">ефективно та швидко допомагати</span> клієнтам зцілитися</div>
+              <div class="for__item _1">Ты <span class="accent">психолог</span>, &#32;и хочешь усилить раппорт с клиентом, читать клиента, как открытую книгу, эффективно и быстро помогать клиентам исцелиться</div>
   
-              <div class="for__item _2">Ти таролог, нумеролог, кармолог, енергопрактик,<span class="accent">і тобі стало тісно в одному інструменті.</span> Ти хочеш отримати розширені знання та потужні інструменти</div>
+              <div class="for__item _2">Ты таролог, нумеролог, кармолог, энергопрактик, и <span class="accent">тебе стало тесно в&#160;одном инструменте</span>, &#32;ты хочешь получить расширенные знания и мощные инструменты</div>
   
-              <div class="for__item _3">Ти відчуваєш, що ти особливий, так було завжди. Ти відчуваєш і знаєш про свою силу, але не вмієш нею керувати</div>
+              <div class="for__item _3">Ты чувствуешь, что <span class="accent">ты особенный</span>, &#32;так было всегда, чувствуешь и&#160;знаешь о своей силе, но не умеешь ей управлять</div>
   
   
-              <div class="for__item _4"><span class="accent">Ти людина допомагаючих професій,</span> та хочеш більш ефективно зцілювати людей, зчитуючи їх, і володіючи потужними інструментами зцілення</div>
+              <div class="for__item _4">Ты человек помогающих профессий и <span class="accent">хочешь более эффективно исцелять людей</span>,&#32; считывая их и обладая мощными инструментами исцеления</div>
   
-              <div class="for__item _5">Хочеш навчитися <span class="accent">зчитувати інформацію з книги життя,</span> щоб допомагати людям</div>
+              <div class="for__item _5">Хочешь научиться <span class="accent">считывать информацию</span> &#32; из книги жизни, чтобы помогать людям</div>
   
-              <div class="for__item _6">Хочеш розкрити та прокачати свій ДАР яснобачення, ясночуття, ясновідчуття, ясного знання.</div>
+              <div class="for__item _6">Хочешь раскрыть и <span class="accent">прокачать свой ДАР ясновидения</span>, &#32;яснослышания, ясночувствования, яснознания</div>
             </div>
           </div>
   
-          <button class="btn btn-blue for__btn js-scroll" data-target="programm">Про курс</button>
+          <button class="btn btn-blue for__btn js-scroll" data-target="programm">О курсе</button>
         </div>
       </section>
   
     
       <section class="programm">
         <div class="programm__container container">
-          <h2 class="programm__title h2"> Програма курсу</h2>
-          <div class="programm__subtitle">Після закінчення курсу ви зможете повноцінно проводити сесії клієнтам за встановлену вами оплату. У вашому арсеналі будуть техніки гіпнотерапії, психології, енергопрактики
-            </div>
+          <h2 class="programm__title h2">Программа курса</h2>
+          <div class="programm__subtitle">По окончанию курса вы сможете полноценно проводить с&#160;клиентами сессии  за&#160;установленную вами плату <br><br>
+            В вашем арсенале будут техники гипнотерапии, психологии, энергопрактики</div>
   
   
             <div class="accordion programm__list">
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 1.   </span>Зчитування поля </span><span class="icon" aria-hidden="true"></span></button>
+                <button id="accordion-button-1" aria-expanded="true"><span class="accordion-title"><span class="accent">Урок 1.   </span>Считывание поля</span><span class="icon" aria-hidden="true"></span></button>
                 <div class="accordion-content">
                   <ul class="accordion-content-list">
-                    <li class="accordion-content-item">Передання ключів зчитування</li>
-                    <li class="accordion-content-item">Техніки входу в Хроніки Акаші</li>
-                    <li class="accordion-content-item">Канали зчитування</li>
-                    <li class="accordion-content-item">Практика зчитування</li>
-  
+                    <li class="accordion-content-item">Обучение считыванию поля</li>
+                    <li class="accordion-content-item">Передача ключей считывания</li>
+                    <li class="accordion-content-item">Техники захода в Хроники Акаши</li>
+                    <li class="accordion-content-item">Каналы считывания</li>
+                    <li class="accordion-content-item">Практика считывания</li>
                     </ul>
   
-                    <div class="accordion-content-add"> Навчитесь заходити в Хроніки Акаші та проведете своє перше зчитування поля людини</div>
+                    <div class="accordion-content-add"> Научитесь заходить в Хроники Акаши и проведете свое первое считывание поля человека</div>
                 </div>
               </div>
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 2.   </span>Чакри. Техніка безпеки.</span><span class="icon" aria-hidden="true"></span></button>
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 2.   </span>Чакры. Безопасность.</span><span class="icon" aria-hidden="true"></span></button>
                 <div class="accordion-content">
                   <ul class="accordion-content-list">
-                    <li class="accordion-content-item">Техніка безпеки роботи з полем</li>
-                    <li class="accordion-content-item"> Введення в Зцілення</li>
-                    <li class="accordion-content-item"> Робота з чакрами. Основи. Сканування. Зцілення</li>
-                    <li class="accordion-content-item">Самозцілення чакр</li>
-                    <li class="accordion-content-item">Калібрування навички зчитування.</li>
+                    <li class="accordion-content-item">Техника безопасности работы с полем</li>
+                    <li class="accordion-content-item"> Введение в Исцеление</li>
+                    <li class="accordion-content-item">Работа с чакрами. Основы. Сканирование. Исцеление</li>
+                    <li class="accordion-content-item">Самоисцеление чакр</li>
+                    <li class="accordion-content-item">Калибровка навыка считывания</li>
                   </ul>
   
-                    <div class="accordion-content-add"> Отримаєте свій перший інструмент зцілення. Навчитесь працювати на енергорівні.</div>
+                    <div class="accordion-content-add"> Получите свой первый инструмент исцеления. Научитесь работать на энергоуровне.</div>
                 </div>
               </div>
   
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 3.   </span>Супервізія</span><span class="icon" aria-hidden="true"></span></button>
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 3.   </span>Супервизия</span><span class="icon" aria-hidden="true"></span></button>
                 <div class="accordion-content">
   
-                  <div class="accordion-content-add"> В онлайн-режимі дивимося, як ви заходите в поле і коригуємо навичку за необхідності</div>
+                  <div class="accordion-content-add"> В онлайн-режиме смотрим, как вы заходите в поле и корректируем навык при необходимости </div>
   
-                  <div class="accordion-content-add"> Працюю з кожним індивідуально у присутності групи. Можливість спостерігати за роботою та навчитися один у одного індивідуальним способам заходу у поле.</div>
+                  <div class="accordion-content-add"> Работаю с каждым индивидуально в присутствии группы. Возможность понаблюдать за работой и научиться друг у друга индивидуальным способам захода в поле</div>
                 </div>
               </div>
   
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 4.   </span>Регресивний гіпноз.</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                  <ul class="accordion-content-list">
-                    <li class="accordion-content-item">Робота з емоціями та почуттями</li>
-                    <li class="accordion-content-item"> Освоєння найефективнішого методу гіпнотерапії - регресивного гіпнозу</li>
-                    <li class="accordion-content-item">Зцілення в регресі</li>
-                  </ul>
-  
-                  <div class="accordion-content-add"> Навчитесь змінювати минуле людини на рівні психіки та енергій</div>
-                </div>
-              </div>
-  
-              <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 5.   </span>Робота з почуттями та емоціями.</span><span class="icon" aria-hidden="true"></span></button>
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 4.   </span>Регрессивный гипноз</span><span class="icon" aria-hidden="true"></span></button>
                 <div class="accordion-content">
                   <ul class="accordion-content-list">
-                    <li class="accordion-content-item">Усвідомленість. Робота через симптоми-тригери</li>
-                    <li class="accordion-content-item"> Техніки роботи з почуттями: Вивантаження/завантаження. </li>
-                    <li class="accordion-content-item">Практики вивільнення  від чужих почуттів, родових почуттів та емоцій</li>
-                    <li class="accordion-content-item">Звільнення тіла від застряглих емоцій.</li>
+                    <li class="accordion-content-item">Работа с эмоциями и чувствами</li>
+                    <li class="accordion-content-item"> Освоение самого эффективного метода гипнотерапии -  регрессивного гипноза</li>
+                    <li class="accordion-content-item">Исцеление в регрессе</li>
                   </ul>
   
-                  <div class="accordion-content-add"> Навчитесь працювати з підсвідомістю клієнта, вивільняти з тіла застряглі та чужі почуття та емоції.</div>
+                  <div class="accordion-content-add"> Научитесь менять <span class="accent">прошлое человека </span>на уровне психики и энергий </div>
                 </div>
               </div>
   
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 6.   </span>Робота з переконаннями</span><span class="icon" aria-hidden="true"></span></button>
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 5.   </span>Работа с чувствами и эмоциями</span><span class="icon" aria-hidden="true"></span></button>
                 <div class="accordion-content">
                   <ul class="accordion-content-list">
-                    <li class="accordion-content-item">Робота з деструктивними переконаннями та програмами на різних рівнях</li>
-                    <li class="accordion-content-item"> Намір</li>
-                    <li class="accordion-content-item">Постановка питань у полі</li>
-                    <li class="accordion-content-item">Відповідальність</li>
+                    <li class="accordion-content-item">Осознанность. Работа через симптомы-триггеры</li>
+                    <li class="accordion-content-item"> Техники работы с чувствами: Выгрузки/загрузки. </li>
+                    <li class="accordion-content-item">Практики избавления от чужих чувств , родовых чувств и эмоций</li>
+                    <li class="accordion-content-item">Освобождение тела от застрявших эмоций</li>
                   </ul>
   
-                  <div class="accordion-content-add"> Робота з деструктивними переконаннями та програмами на різних рівнях</div>
-                  <div class="accordion-content-add">Навчитесь виявляти та звільняти клієнта від деструктивної картини світу, яку він створив у своїй підсвідомості</div>
+                  <div class="accordion-content-add"> Научитесь работать с подсознанием клиента, высвобождать из тела застрявшие и чужие чувства и эмоции </div>
                 </div>
               </div>
   
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 7.   </span>Блоки Цілителя</span><span class="icon" aria-hidden="true"></span></button>
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 6.   </span>Убеждения</span><span class="icon" aria-hidden="true"></span></button>
                 <div class="accordion-content">
                   <ul class="accordion-content-list">
-                    <li class="accordion-content-item">Причини та Джерела Блоків Цілителя</li>
-                    <li class="accordion-content-item"> Перевірка на блоки</li>
-                    <li class="accordion-content-item">Особистісне опрацювання конкретного переліку блоків Цілителя, які блокували потенціал надздібностей або закривали їх. </li>
+                    <li class="accordion-content-item">Работа с убеждениями</li>
+                    <li class="accordion-content-item"> Намерение </li>
+                    <li class="accordion-content-item">Постановка вопросов в поле</li>
+                    <li class="accordion-content-item">Ответственность</li>
                   </ul>
   
-                  <div class="accordion-content-add"> Пропрацюєте блоки на яснобачення і цілительство, ще більше розкриєте здібності.</div>
+                  <div class="accordion-content-add"> Работа с деструктивными убеждениями и программами на разных уровнях</div>
+                  <div class="accordion-content-add">Научитесь выявлять и освобождать клиента от деструктивной картины мира, которую он создал в своем подсознании</div>
+                </div>
+              </div>
+  
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 6.   </span>Блоки Целителя</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <ul class="accordion-content-list">
+                    <li class="accordion-content-item">Причины и Источники Блоков Целителя</li>
+                    <li class="accordion-content-item"> Проверка на блоки</li>
+                    <li class="accordion-content-item">Личностная проработка конкретного перечня блоков Целителя, которые блокировали потенциал сверхспособностей или закрывали их. </li>
+                  </ul>
+  
+                  <div class="accordion-content-add"> Проработаете блоки на ясновидение и целительство, еще больше раскроете способности.</div>
    
                 </div>
               </div>
   
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 8.   </span>Супервізія навичок</span><span class="icon" aria-hidden="true"></span></button>
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 8.   </span>Супервизия</span><span class="icon" aria-hidden="true"></span></button>
                 <div class="accordion-content">
   
-                  <div class="accordion-content-add"> В онлайн-режимі дивимося, як ви заходите в поле та використовуєте інструменти, корегуємо навичку за необхідності </div>
+                  <div class="accordion-content-add"> В онлайн-режиме смотрим, как вы заходите в поле и используете инструменты,  корректируем навык  при необходимости </div>
                 </div>
               </div>
   
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 9.   </span>Сутності</span><span class="icon" aria-hidden="true"></span></button>
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 9.   </span>Сущности</span><span class="icon" aria-hidden="true"></span></button>
                 <div class="accordion-content">
                   <ul class="accordion-content-list">
-                    <li class="accordion-content-item">Сутності. Розгорнуте розуміння</li>
-                    <li class="accordion-content-item"> Робота з різного плану Сутностями</li>
-                    <li class="accordion-content-item">Зцілення та звільнення людини від них</li>
+                    <li class="accordion-content-item">Сущности. Развернутое понимание</li>
+                    <li class="accordion-content-item"> Работа с разного плана Сущностями</li>
+                    <li class="accordion-content-item">Исцеление и освобождение человека от них</li>
                   </ul>
   
-                  <div class="accordion-content-add"> Навчитесь працювати з істотами тонкого плану, очищати людину від підключок, навчитесь працювати з Демонами та повернете собі свою силу.</div>
+                  <div class="accordion-content-add"> Научитесь работать с существами тонкого плана, очищать человека от подключек, научитесь работать с Демонами и вернете себе свою силу</div>
    
                 </div>
               </div>
   
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 10.   </span>Робота із зобов'язаннями</span><span class="icon" aria-hidden="true"></span></button>
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 10.   </span>Работа с обязательствами</span><span class="icon" aria-hidden="true"></span></button>
                 <div class="accordion-content">
                   <ul class="accordion-content-list">
-                    <li class="accordion-content-item">Робота з клятвами, обітницями, обіцянками</li>
-                    <li class="accordion-content-item"> Робота з контрактами між Душами та іншими істотами</li>
-                    <li class="accordion-content-item">Уроки Душі</li>
-                    <li class="accordion-content-item">Скасування виконання зобов'язань з минулих життів.</li>
+                    <li class="accordion-content-item">Работа с клятвами, обетами, обещаниями</li>
+                    <li class="accordion-content-item"> Работа с контрактами между Душами и другими существами</li>
+                    <li class="accordion-content-item">Уроки Души</li>
+                    <li class="accordion-content-item">Отмена выполнения обязательств из прошлых жизней</li>
                   </ul>
   
-                  <div class="accordion-content-add"> Навчитесь звільняти Душу людини від зобов'язань, взятих у цьому чи минулих втіленнях, закривати відпрацьовані домовленості, пропрацьовувати уроки Душі</div>
+                  <div class="accordion-content-add"> Научитесь освобождать Душу человека от обязательств, взятых в этом или прошлых воплощениях, закрывать отработанные договоренности, прорабатывать уроки Души</div>
    
                 </div>
               </div>
   
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 11.   </span>Випускний</span><span class="icon" aria-hidden="true"></span></button>
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 11.   </span>Выпускной</span><span class="icon" aria-hidden="true"></span></button>
                 <div class="accordion-content">
                   <ul class="accordion-content-list">
-                    <li class="accordion-content-item">Підбиття підсумків</li>
-                    <li class="accordion-content-item"> Настанови на оплатну роботу з людьми</li>
-                    <li class="accordion-content-item">Обмін досвідом</li>
+                    <li class="accordion-content-item">Подведение итогов</li>
+                    <li class="accordion-content-item"> Наставления на оплатную работу с людьми</li>
+                    <li class="accordion-content-item">Обмен опытом</li>
                   </ul>
    
                 </div>
               </div>
             </div>
   
-            <button class="programm__btn btn btn-blue js-scroll" data-target="payment">забронювати місце</button>
+            <button class="programm__btn btn btn-blue js-scroll" data-target="payment">Забронировать место</button>
         </div>
   
   
@@ -278,33 +278,33 @@
   
       <section class="about">
         <div class="about__container container">
-          <h2 class="about__title h2">Про автора курсу</h2>
+          <h2 class="about__title h2">Об авторе курса</h2>
   
           <div class="about__content">
-            <img class="about__img" src="../img/about-img.png">
+            <img class="about__img" src="../img/about-img.png" loading="lazy"  alt="автор">
             <div class="about__txt">
-              <h4 class="about__txt-title">Вітаю вас!</h4>
-              <p class="about__txt-show">Я - Марина Ємцова, психолог і Провідник Провідників,
-                навчаю людей прийняти свій Дар та навчитися його використовувати. ‌ ‌
+              <h4 class="about__txt-title">Приветствую Вас!</h4>
+              <p class="about__txt-show">Я - Марина Емцова, психолог и Проводник Проводников, 
+                обучаю людей принять свой Дар и&#160;научиться его использовать. ‌
                 </p>
 
                 <div class="about__txt-btn">Мой путь</div>
 
                 <div class="about__txt-hiden">
 
-                <p>Я пройшла шлях від повного прагматика-матеріаліста до розкриття в собі дару Яснобачення та цілительства. У житті зі мною траплялися дивні надприродні речі, які я ніяк не могла пояснити з погляду відомих мені наук (спойлер - так Дар стукався до мене). ‌І ці дива спонукали мене шукати відповіді доти, доки я не знайшла своєї ясності. І тоді я прийняла ДАР. ‌ ‌ 
+                <p>Я прошла путь от полного прагматика-материалиста до раскрытия в себе дара Ясновидения и&#160;Целительства. В жизни со мной случались странные сверхестевенные вещи, которые я&#160;никак не могла объяснить с точки зрения известных мне наук (спойлер) - так Дар стучался ко&#160;мне. ‌И&#160;эти странности сподвигли меня искать ответы до тех пор, пока я не нашла свою ясность. И тогда я приняла ДАР. ‌ 
                 </p>
   
-                <p>‌Зараз я навчаю таких як я, людей, шукаючих відповіді, відчуваючих, що світ набагато ширший, ніж усім здається, людей, які знають, що вони особливі, але не до кінця можуть зрозуміти, як прийняти свої здібності. ‌ ‌</p>
+                <p>‌Сейчас я обучаю таких как я, которые ищут ответы, которые чувствуют, что мир намного шире, чем всем кажется, которые знают, что они особенные, но не до конца могут понять, как принять свои способности. ‌</p>
   
-                <p>‌Для цього я заснувала Школу Цілителів Душі. І оскільки я ще й психолог, я знаю, що психіка і Душа настільки взаємопов'язані, що їх неможливо розділити.</p>
+                <p>‌Для этого я основала Школу Целителей Души. И поскольку я являюсь еще и психологом, я&#160;знаю, что психика и Душа на столько взаимосвязаны, что их невозможно разделить.</p>
   
-                <p>Тому в моїй школі ми наголошуємо на зціленні своєї Душі, психіки, особистості і в цілому свого життя разом з прийняттям своїх здібностей. Після навчання учні стають іншими людьми, оскільки зцілюються самі і можуть зцілювати інших.</p>
+                <p>Поэтому в моей школе мы делаем упор на исцеление своей Души, психики, личности и&#160;в&#160;целом своей жизни вместе с принятием своих способностей. После обучения ученики становятся другими людьми, поскольку исцеляются сами и тогда могут исцелять других.</p>
                 </div>
   
             </div>
   
-            <button class="about__btn btn btn-blue js-scroll" data-target="contacts">Написати мені</button>
+            <button class="about__btn btn btn-blue js-scroll" data-target="contacts">Написать мне</button>
           </div>
         </div>
       </section>
@@ -312,7 +312,7 @@
   
     <section class="reviews">
         <div class="reviews__container container">
-          <h2 class="reviews__title h2">Відгуки</h2>
+          <h2 class="reviews__title h2">Отзывы</h2>
   
           <div class="swiper desc">
   
@@ -332,7 +332,7 @@
                     </div>  
   
                     <div class="reviews__item _img">
-                      <img src="../img/test-4.jpg" alt="">
+                      <img src="../img/test-4.jpg" alt="" loading="lazy">
                     </div>
       
                 </div>
@@ -344,7 +344,7 @@
                   </div>
         
                   <div class="reviews__item _img">
-                    <img src="../img/test-2.jpg" alt="">
+                    <img src="../img/test-2.jpg" alt="" loading="lazy">
                   </div>
         
                   <div class="reviews__item _txt">
@@ -365,7 +365,7 @@
                   </div>
   
                   <div class="reviews__item _img">
-                    <img src="../img/test-1.jpg" alt="">
+                    <img src="../img/test-1.jpg" alt="" loading="lazy">
                   </div>
       
               </div>
@@ -379,7 +379,7 @@
   
   
                 <div class="reviews__item _img">
-                  <img src="../img/test-3.jpg" alt="">
+                  <img src="../img/test-3.jpg" alt="" loading="lazy">
                 </div>
       
            
@@ -411,7 +411,7 @@
                     </div>
       
                     <div class="reviews__item _img _svg">
-                      <img src="../img/who-1.svg" alt="">
+                      <img src="../img/who-1.svg" alt="" loading="lazy">
                     </div>
       
       
@@ -446,7 +446,7 @@
                 
       
                 <div class="reviews__item _img">
-                  <img src="../img/test-3.jpg" alt="">
+                  <img src="../img/test-3.jpg" alt="" loading="lazy">
                 </div>
                 </div>
       
@@ -454,7 +454,7 @@
   
   
                 <div class="reviews__item _img">
-                  <img src="../img/test-4.jpg" alt="">
+                  <img src="../img/test-4.jpg" alt="" loading="lazy">
                 </div>
   
                   <div class="reviews__item _txt">
@@ -520,7 +520,7 @@
                   </div>
   
                   <div class="reviews__item _img">
-                    <img src="../img/test-1.jpg" alt="">
+                    <img src="../img/test-1.jpg" alt="" loading="lazy">
                   </div>
   
                   <div class="reviews__item _txt">
@@ -549,14 +549,14 @@
   
   
                   <div class="reviews__item _img">
-                    <img src="../img/test-4.jpg" alt="">
+                    <img src="../img/test-4.jpg" alt="" loading="lazy">
                   </div>
               </div>
   
               <div class="column column-3 ">  
   
                 <div class="reviews__item _img">
-                  <img src="../img/test-3.jpg" alt="">
+                  <img src="../img/test-3.jpg" alt="" loading="lazy">
                 </div>
              
       
@@ -575,7 +575,7 @@
             </div>
             <div class="column column-4 ">  
               <div class="reviews__item _img _svg">
-                <img src="../img/who-3.svg" alt="">
+                <img src="../img/who-3.svg" alt="" loading="lazy">
               </div> 
              
               <div class="reviews__item _txt">
@@ -673,34 +673,34 @@
 
        <section class="how">
         <div class="how__container container">
-          <h2 class="how__title h2">Як зрозуміти,<br>
-            що в мене є здібності</h2>
+          <h2 class="how__title h2">Как понять, <br>
+            что у меня есть способности</h2>
 
 
             <div class="how__list">
               <div class="how__item _1">
                 <div class="how__item-img"></div>
-                <div class="how__item-txt">У тебе є інтерес у сфері езотерики, тебе туди прям тягне, як магнітом - значить здібності є, і вони хочуть проявитися</div>
+                <div class="how__item-txt">У вас есть интерес в сфере эзотерики, вас туда прям тянет, как магнитом - значит способности есть и они хотят ПРОЯВИТЬСЯ</div>
               </div>
 
               <div class="how__item _2">
                 <div class="how__item-img"></div>
-                <div class="how__item-txt">Ти психолог чи людина,  допомагаючих професій - точно є!  Тебе не дарма потягнуло допомагати людям, просто здібності можуть бути заблоковані, або не повністю розкриті</div>
+                <div class="how__item-txt">Вы психолог или человек помогающих профессий - точно есть, вас не зря потянуло помогать людям, просто способности могут быть заблокированы, или не полностью раскрыты</div>
               </div>
 
               <div class="how__item _3">
                 <div class="how__item-img"></div>
-                <div class="how__item-txt">Ти емпат - ти можеш відчути почуття, емоції, проблеми, стан  чи переживання інших людей, ти вмієш співчувати</div>
+                <div class="how__item-txt">Вы эмпат - вы можете почувствовать чувства, эмоции, проблемы  или состояния или переживания других людей, вы умеете сопереживать</div>
               </div>
 
               <div class="how__item _4">
                 <div class="how__item-img"></div>
-                <div class="how__item-txt">У житті ти стикаєшся з різного роду незвіданим чи надприродним, сутностями, духами, бачиш пророчі сни чи передчуваєш події</div>
+                <div class="how__item-txt">В жизни вы сталкиваетесь с разного рода неизведанным или сверхестественным, сущностями, духами, видите вещие сны или предчувствуете события</div>
               </div>
 
               <div class="how__item _5">
                 <div class="how__item-img"></div>
-                <div class="how__item-txt">У твоїй присутності, у твоєму полі людям стає добре чи спокійно, після спілкування з тобою людям стає легше та покращується їх стан</div>
+                <div class="how__item-txt">В вашем присутствии, в вашем поле людям становится хорошо или спокойно, после общения с вами людям становится легче и улучшается состояние</div>
               </div>
             </div>
         </div>
@@ -709,108 +709,111 @@
 
        <section class="faq">
         <div class="faq__container container">
-          <h2 class="faq__title h2">Відповіді на запитання</h2>
+          <h2 class="faq__title h2">Ответы на вопросы</h2>
 
           <div class="accordion programm__list">
             <div class="accordion-item">
-              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Як проходять заняття?</span><span class="icon" aria-hidden="true"></span></button>
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Как проходят занятия?</span><span class="icon" aria-hidden="true"></span></button>
               <div class="accordion-content">
                 <ul class="accordion-content-list">
-                  <li class="accordion-content-item">Заняття проходять онлайн у живому форматі на платформі ZOOM, один раз на тиждень по суботах (запис буде).</li>
-                  <li class="accordion-content-item">Живий урок триває три години. Час ефіру 13:00 за Києвом (16:00 за Астаною).</li>
-                  <li class="accordion-content-item">Записи будуть у вашому розпорядженні протягом 6 місяців після початку курсу. </li>
+                  <li class="accordion-content-item">Занятия проходят онлайн в живом формате на платформе ZOOM один раз в неделю по субботам (запись будет).
+                    Живой урок длится 3 часа. Время эфира 13:00 по Киеву (16:00 по Астане). 
+                    Записи будут в вашем распоряжении в течение 6 месяцев после начала курса.</li>
+                  <li class="accordion-content-item">Каждый урок разбит  на 3 части: ответы на вопросы по предыдущей теме + ДАЮ НОВУЮ ТЕМУ и показываю/рассказываю, как с ней работать + в зуме в группах сразу во время эфира идете тренироваться НА ПРАКТИКЕ.</li>
+                  <li class="accordion-content-item">Потом у вас есть неделя на отработку темы с коллегами из группы. Также есть чат для обсуждения любых вопросов и сопровождения процессов. </li>
                 </ul>
               </div>
             </div>
             <div class="accordion-item">
-              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Скільки часу у мене займатиме навчання?</span><span class="icon" aria-hidden="true"></span></button>
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Сколько времени у меня будет занимать учеба?</span><span class="icon" aria-hidden="true"></span></button>
               <div class="accordion-content">
                 <ul class="accordion-content-list">
-                  <li class="accordion-content-item">Ефір по суботах займає 3 години, решта – практика у групах. Коли ви зчитуватимете і зцілюватимете один одного. </li>
-                  <li class="accordion-content-item"> Я рекомендую 5-10 годин на тиждень практикувати, щоб досягти професіоналізму (зручний час обираєте самі з колегами з курсу).</li>
-                  <li class="accordion-content-item">Щоб навчитися працювати з Хроніками - обов'язково потрібно практикувати, щоб відкалібрувати свої здібності. Зчитування ви навчитеся вже на першому уроці. А ось довіряти собі швидше за все не з першого разу. Тому потрібно дуже багато практики. </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Що потрібно, щоб успішно пройти курс?</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
-
-                <ul class="accordion-content-list">
-                  <li class="accordion-content-item">Використовувати та керувати своїми надздібностями - це навичка, тому 90% курсу - це практика! І тут важлива ваша включеність та бажання працювати.</li>
-                  <li class="accordion-content-item">Я даю всі інструменти та знання, необхідні для розкриття вашого ДАРу та вміння ним керувати. Ваша частина роботи – це практикувати та відточувати навички до автоматизму.</li>
+                  <li class="accordion-content-item">Эфир по субботам занимает 3 часа, остальная часть – практика в группах. Когда вы будете считывать и исцелять друг друга. </li>
+                  <li class="accordion-content-item"> Я рекомендую 6-10 часов в неделю практиковать, чтобы достичь профессионализма (удобное время будете выбирать сами с коллегами по курсу).</li>
+                  <li class="accordion-content-item">Чтобы научиться работать с Хрониками - обязательно нужно практиковать, чтобы откалибровать свои способности. Читать вы научитесь уже на первом уроке. А вот доверять себе скорее всего не сразу. Поэтому нужно очень много практики. </li>
                 </ul>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Яка структура курсу?<span class="icon" aria-hidden="true"></span></button>
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Что необходимо, чтобы успешно пройти курс?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+
+                <ul class="accordion-content-list">
+                  <li class="accordion-content-item">Управлять и использовать свои сверхспособности - это навык, поэтому 90 % курса - это практика! И тут важна ваша включенность и желание работать.</li>
+                  <li class="accordion-content-item">Я даю все инструменты и знания, необходимые для раскрытия вашего ДАРа и умения им управлять. Ваша часть работы – это практиковать и оттачивать навыки до автоматизма.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Какова структура курса?</span><span class="icon" aria-hidden="true"></span></button>
               <div class="accordion-content">
                 <ul class="accordion-content-list">
-                  <li class="accordion-content-item">Тривалість навчання – 11 тижнів. 
-                    Протягом навчання для кожного індивідуально двічі я проводжу супервізію (перевіряємо, чи правильно робите, та коригуємо за необхідності).</li>
-                  <li class="accordion-content-item">На першому уроці у прямому ефірі я передам вам ключі у Хроніки Акаші, познайомлю з Наставниками Хронік та навчу заходити у поле декількома методами.
+                  <li class="accordion-content-item">Длительность обучения 11 недель. 
+                    В течение обучения для каждого индивидуально дважды я провожу супервизию (проверяем, правильно ли делаете, и корректируем при необходимости).</li>
+                  <li class="accordion-content-item"> На первом  уроке в прямом  эфире я передам вам ключи в Хроники Акаши, познакомлю с Наставниками Хроник и научу заходить в поле несколькими методами. 
                   </li>
-                  <li class="accordion-content-item">З напрацюванням практики ваші навички зчитування покращуватимуться.</li>
-                  <li class="accordion-content-item">На наступних уроках ви отримуватимете теорію та практику з різних інструментів яснобачення та цілительства (окрім Хронік Акаші).</li>
+                  <li class="accordion-content-item">С наработкой практики ваши навыки считывания будут улучшаться.</li>
+                  <li class="accordion-content-item">На следующих уроках вы будете получать теорию и практику по разным инструментам ясновидения и целительства (помимо Хроник Акаши).</li>
                 </ul>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Як відбувається зарахування на курс?</span><span class="icon" aria-hidden="true"></span></button>
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Как происходит зачисление на курс?</span><span class="icon" aria-hidden="true"></span></button>
               <div class="accordion-content">
-                <div class="accordion-content-add">Ви залишаєте заявку на сайті з прикріпленим актуальним фото та своїми контактами. Я дивлюся фото на предмет можливостей та сумісності з групою. Протягом 1-2 днів я надсилаю вам зворотний зв'язок по фото і, якщо все ок - погоджуємо умови оплати.</div>
+                <div class="accordion-content-add">Вы оставляете заявку через любой мессенджер с прикрепленным актуальным фото и своими контактами. Я смотрю фото на предмет способностей и сопоставимости с группой. В течение 1-2ух дней я присылаю вам обратную связь по фото и, если все ок – согласовываем условия оплаты.</div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Як я можу застосувати розстрочку?<span class="icon" aria-hidden="true"></span></button>
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Как я могу применить рассрочку?<span class="icon" aria-hidden="true"></span></button>
               <div class="accordion-content">
-                <div class="accordion-content-add">Для застосування розстрочки - напишіть мені в будь-який меседжер, та ми узгодимо умови. Загальну суму можливо розбити на 2-3 оплати.</div>
+                <div class="accordion-content-add">Для применения рассрочки – напиши мне в любой мессенджер и мы согласуем условия рассрочки.
+                  Рассрочка возможна 2-3мя платежами в течение курса.</div>
               </div>
             </div>
           </div>
 
-          <button class="btn btn-blue faq__btn js-scroll" data-target="contacts">ваше питання</button>
+          <button class="btn btn-blue faq__btn js-scroll" data-target="contacts">Задать свой вопрос</button>
         </div>
       </section>
 
    <section class="payment">
         <div class="payment__container container">
-          <h2 class="payment__title h2">Оплата курсу</h2>
-          <div class="payment__subtitle">Перед зарахуванням на курс я дивлюся кожного індивідуально на рівень відкритості здібностей, і чи підходить вам цей курс. </div>
+          <h2 class="payment__title h2">Оплата курса</h2>
+          <div class="payment__subtitle">Перед зачислением на курс я смотрю каждого индивидуально на степень открытости способностей, и подходит ли вам этот курс. </div>
 
-          <div class="payment__subtitle">Прикріпіть своє фото в заявці на зарахування або надішліть мені своє фото в інстаграм - я подивлюсь ваше поле та надам зворотний зв'язок.</div>
+          <div class="payment__subtitle"> Пришлите мне свое фото в любом мессенджере - я посмотрю ваше и поле и дам обратную связь.</div>
 
           <div class="card__list">
             <div class="card__item">
-              <h4 class="card__item-title">Одноразова оплата</h4>
+              <h4 class="card__item-title">Единовременная оплата</h4>
               <div class="card__item-bg _1">
               </div>
 
 
               <div class="card__item-bottom">   
-                <div class="card__item-price-full">400 €</div>
-              <div class="card__item-price">350 €</div>
+                <div class="card__item-price-full">390 €</div>
+              <div class="card__item-price">360 €</div>
 
-              <button class="btn btn-blue card__btn open-popup" data-type='main'>залишити заявку</button></div>
+              <button class="btn btn-blue card__btn open-popup" data-type='main'>Оставить заявку</button></div>
 
            
             </div>
 
             <div class="card__item">
               <h4 class="card__item-title">Оплата <br>
-                в розстрочку</h4>
+                в рассрочку</h4>
               <div class="card__item-bg _2">
               </div>
 
 
               <div class="card__item-bottom">   
-              <div class="card__item-price" >400 €</div>
+              <div class="card__item-price" >390 €</div>
 
-              <button class="btn btn-blue card__btn open-popup" data-type='main'>залишити заявку</button></div>
+              <button class="btn btn-blue card__btn open-popup" data-type='main'>Оставить заявку</button></div>
 
            
             </div>
@@ -820,8 +823,8 @@
 
       <section class="contacts">
         <div class="contacts__container container">
-          <h2 class="contacts__title h2">Контакти</h2>
-          <div class="contacts__subtitle">Якщо залишились питання - пишіть в будь-який месенджер</div>
+          <h2 class="contacts__title h2">Контакты</h2>
+          <div class="contacts__subtitle">Остались вопросы? <br>Можно написать свой вопрос в любой мессенжер</div>
 
           <div class="contacts__inner">
             <div class="contacts__form">
@@ -873,17 +876,6 @@
                 </a>
               </div>
 
-              <div class="contacts__info">
-                <div class="contacts__info-item">ФОП Ємцова Марина Сергіївна</div>
-                <div class="contacts__info-item"><span>ІПН:</span> &#32; 3332612668</div>
-                ‌<div class="contacts__info-item"><span>Адреса</span>‌ &#32; Київ, вул. Галицька, б.11, кв 45</div>
-                <div class="contacts__info-item"><span>Служба підтримки:</span>&#32; <a href="tel:‌+380662191346">‌+380662191346</a></div>
-                <div class="contacts__info-item"><span>Електронна пошта:</span> &#32;<a href="mailto:emcoarka@gmail.com">emcoarka@gmail.com</a></div>
-                
-                
-                ‌
-              </div>
-
               <div class="contacts__social-img"> </div>
             </div>
             
@@ -903,29 +895,32 @@
         </div>
 
         <div class="footer__links">
-   <!--        <a href="mailto:emcoarka@gmail.com" target="_blank">emcoarka@gmail.com</a> -->
-          <a href="policy.html " target="_blank">Угода користувача (оферти)</a>
+          <a href="mailto:emcoarka@gmail.com" target="_blank">ФЛП Емцова М.С.</a>
+          <a href="policy.html " target="_blank">Договор оферты</a>
         </div>
 
 
-        <a class="footer__dev-link" href="https://t.me/s_iana" target="_blank">Pозробка сайту Yana Aydin</a>
+        <a class="footer__dev-link" href="https://t.me/s_iana" target="_blank">Разработка сайта  Yana Aydin</a>
       </div>
     </footer> 
 
     <div class="popup__bg main"> 
       <div class="popup ">
-      <img src="../img/close.svg" class="close-popup">
+      <img src="../img/close.svg" class="close-popup" alt="close">
           <div class="popup__content">
-              <div class="popup__title">Залишити заявку</div>
+              <div class="popup__title">Оставить заявку</div>
             
 
-              <div class="popup__warning">Перед зарахуванням на курс я дивлюсь кожного індивідуально на рівень відкритості здібностей та, чи підходить вам цей курс.<br> <br>
-                Пришліть своє фото у повідомленні -&#160;я&#160;подивлюсь ваше поле та&#160;надам зворотній зв’язок.</div>
+              <div class="popup__warning">Перед зачислением на курс я смотрю каждого <span class="accent">индивидуально на степень открытости способностей</span>, и&#160;подходит ли вам этот курс. <br> <br>
+                Прикрепите свое фото в сообщении - я посмотрю ваше поле и&#160;дам обратную связь.</div>
 
-                <div class="popup__subtitle">Оберіть соціальну мережу</div>
+                <div class="popup__subtitle">Выберите социальную сеть</div>
 
               <div class="contacts__social-list">
                 <a class="contacts__social-item _insta" href="https://www.instagram.com/tiktak_psychology" target="_blank" >
+                </a>
+
+                <a class="contacts__social-item _tel" href="https://t.me/mary_yem" target="_blank" >
                 </a>
 
                 <a class="contacts__social-item _wapp" href="https://api.whatsapp.com/send?phone=380662191346" target="_blank">

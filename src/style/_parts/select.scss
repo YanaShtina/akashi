@@ -23,8 +23,9 @@
   color: #722086;
 
   @include mobile {
-    /* padding: rem(8px) rem(12px); */
-    font-size: rem(14px);
+    padding: rem(12px) rem(12px);
+    font-size: rem(16px);
+    justify-content: center
   }
 }
 
@@ -87,6 +88,10 @@
   font-family: $p-font-medium;
   line-height: 110%;
   color: #722086;
+
+  @include mobile {
+    font-size: rem(16px);
+  }
 }
 
 .itc-select__option_selected {

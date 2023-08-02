@@ -8,6 +8,7 @@ import select  from './modules/itc-custom-select';
 import form  from './modules/form';
 import burger  from './modules/burger';
 import random  from './modules/random';
+import lang  from './modules/lang';
 
 
 
@@ -20,6 +21,7 @@ slider.init();
 select.init();
 burger.init();
 random.init();
+lang.init();
 
 
 

@@ -101,7 +101,7 @@
 
       @include mobile {
         width: rem(120px);
-      height: rem(120px);
+        height: rem(120px);
       }
 
       &._1 {
@@ -110,6 +110,9 @@
 
       &._2 {
         background-image: url('../../img/payment-2.svg');
+        width: rem(140px);
+        height: rem(140px);
+        top: 47%;
       }
     }
 

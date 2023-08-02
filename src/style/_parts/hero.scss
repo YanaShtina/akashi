@@ -13,6 +13,10 @@ $b: '.hero';
   justify-content: space-between;
   padding-top: rem(50px);
   position: relative;
+  
+  @include mobile {
+    // padding: 0 rem(8px) !important;
+  }
 }
 
 &__btn {
@@ -28,7 +32,7 @@ $b: '.hero';
   
 
   @include mobile {
-    width: rem(175px);
+    width: rem(168px);
   }
 }
 
@@ -63,6 +67,19 @@ $b: '.hero';
       left: 0;
     }
   }
+
+  &.rus {
+    width: rem(1074px);
+    height: rem(310px);
+    left: rem(60px);
+
+    @include mobile {
+      width: rem(240px);
+      height: rem(70px);
+      top: rem(46px);
+      left: 0;
+    }
+  }
 }
 
 &__left-text {
@@ -83,7 +100,7 @@ $b: '.hero';
       width: rem(140px);
     }
     font-family: $p-font-regular;
-    font-size: rem(18px);
+    font-size: rem(16px);
     
    
   }
@@ -94,7 +111,7 @@ $b: '.hero';
 
     @include mobile {
       margin-bottom: rem(8px);
-      margin-top: rem(48px);
+      margin-top: rem(30px);
     }
   }
 
@@ -119,11 +136,11 @@ $b: '.hero';
   height: rem(700px);
 
   @include mobile {
-    width: rem(156px);
-    height: rem(235px);
+    width: rem(170px);
+    height: rem(300px);
     position: absolute;
-    top: rem(56px);
-    right: rem(16px);
+    top: rem(16px);
+    right: rem(8px);
     z-index: -1;
   }
 
@@ -133,8 +150,8 @@ $b: '.hero';
     object-fit: contain;
 
     @include mobile {
-      width: rem(156px);
-      height: rem(235px);
+      width: rem(170px);
+      height: rem(300px);
     }
   
   }
@@ -148,6 +165,10 @@ $b: '.hero';
   @include mobile {
     width: rem(16px);
     margin-top: rem(42px);
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 
   svg {
