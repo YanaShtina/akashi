@@ -62,7 +62,7 @@ export default {
     
       _onClick(e) {
         const { target } = e;
-        console.log('_onClick', target)
+     
         const type = target.closest(this.constructor.DATA).dataset.select;
         if (type === 'toggle') {
           this.toggle();
@@ -171,16 +171,16 @@ export default {
       btn.textContent = 'rus';
       
     }
-    console.log('isUkr', isUkr);
+  
 
     options.forEach((opt) => {
       opt.addEventListener('click', () => {
-        console.log('select1', opt.dataset.value);
+   
   
         if (opt.dataset.value === 'rus') {
           window.location.pathname = '/'
         } else if (opt.dataset.value === 'ukr') {
-          console.log(' else if',  window.location.pathname);
+      
           window.location.pathname = '/ukr.html'
         } else {
           window.location.pathname = '/'

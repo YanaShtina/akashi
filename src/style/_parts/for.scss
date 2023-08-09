@@ -52,6 +52,10 @@ $b: '.for';
     &.ukr {
       .for__item._4 {
         right: rem(48px);
+
+        @include mobile {
+          right: 0;
+        }
       }
     }
 

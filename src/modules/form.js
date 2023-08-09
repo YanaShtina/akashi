@@ -12,7 +12,6 @@ export default {
     
 
     formMain.addEventListener('submit', function(e) {
-      console.log('formMain', formMain);
       e.preventDefault();
 
       let msg = `<b>Сообщение с сайта</b>\n`;

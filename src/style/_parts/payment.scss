@@ -16,11 +16,14 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: rem(120px);
+    line-height: 120%;
 
     &:nth-child(2) {
       margin-bottom: rem(28px);
 
       @include mobile {
+        font-size: rem(14px);
+        
         margin-bottom: rem(14px);
       }
     }
@@ -29,6 +32,8 @@
       margin-bottom: rem(60px);
       max-width: rem(300px);
       font-size: rem(16px);
+      font-size: rem(14px);
+      margin-bottom: rem(14px);
     }
   }
 
@@ -60,7 +65,7 @@
 
     @include mobile {
       padding: rem(24px);
-      width: calc(rem(300px) - rem(24px)*2);
+      width: calc(100% - rem(24px)*2);
       height: calc(rem(360px) - rem(24px)*2);
       border: 1px solid $p-accent-2;
       background-image: none;
@@ -100,8 +105,8 @@
       transform: translateY(-50%);
 
       @include mobile {
-        width: rem(120px);
-        height: rem(120px);
+        width: rem(130px);
+        height: rem(130px);
       }
 
       &._1 {
@@ -113,6 +118,11 @@
         width: rem(140px);
         height: rem(140px);
         top: 47%;
+
+        @include mobile {
+          width: rem(110px);
+          height: rem(110px);
+        }
       }
     }
 
@@ -137,7 +147,7 @@
       @include mobile {
         font-size: rem(14px);
         top: rem(12px);
-        left: rem(32px);
+        left: rem(55px);
       }
 
       &::before {

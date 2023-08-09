@@ -4,13 +4,13 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 export default {
   scroll() {
     const links = document.querySelectorAll('.js-scroll');
-    console.log('link', links);
+   
     const targetElement = document.querySelector('.nav__list ');
     links.forEach(link => {
 
       link.addEventListener('click', function(e) {
           e.preventDefault();
-          console.log('link', link);
+         
           const target = this.dataset.target;
           const scrollTarget = document.querySelector(`.${target}`);
           const burger = document.querySelector('.burger');
