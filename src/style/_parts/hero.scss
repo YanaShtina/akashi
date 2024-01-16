@@ -1,21 +1,27 @@
 $b: '.hero';
 
 #{$b} {
-  margin-bottom: rem(180px);
+  margin-bottom: rem(120px);
+  background-image: url('../../img/ellipsHero.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @include mobile {
     margin-bottom: rem(56px);
+    overflow-x: hidden;
   }
 &__container  {
   display: flex;
   align-items: flex-end;
   position: relative;
   justify-content: space-between;
-  padding-top: rem(50px);
+  padding-top: rem(0px);
   position: relative;
   
   @include mobile {
     // padding: 0 rem(8px) !important;
+    padding-top: rem(0px);
   }
 }
 
@@ -35,18 +41,24 @@ $b: '.hero';
     width: rem(168px);
   }
 }
+&__left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 &__left-img {
   position: absolute;
-  width: rem(1074px);
-  height: rem(258px);
+  width: rem(974px);
+  height: rem(358px);
   top: rem(78px);
-  left: rem(48px);
+  left: rem(100px);
 
   @include mobile {
-    width: rem(240px);
-    height: rem(70px);
-    top: rem(46px);
+    width: rem(300px);
+    height: rem(170px);
+    top: rem(-24px);
     left: rem(16px);
   }
 
@@ -56,7 +68,7 @@ $b: '.hero';
     object-fit: contain;
   }
 
-  &.ukr {
+/*   &.ukr {
     width: rem(1074px);
     height: rem(320px);
 
@@ -79,7 +91,7 @@ $b: '.hero';
       top: rem(46px);
       left: 0;
     }
-  }
+  } */
 }
 
 &__left-text {
@@ -132,15 +144,16 @@ $b: '.hero';
 }
 
 &__right {
-  width: rem(505px);
+  width: rem(855px);
   height: rem(700px);
 
+
   @include mobile {
-    width: rem(170px);
-    height: rem(300px);
+    width: rem(300px);
+    height: rem(200px);
     position: absolute;
-    top: rem(16px);
-    right: rem(8px);
+    top: rem(80px);
+    right: rem(-50px);
     z-index: -1;
   }
 
@@ -149,10 +162,10 @@ $b: '.hero';
     height: 100%;
     object-fit: contain;
 
-    @include mobile {
+/*     @include mobile {
       width: rem(170px);
       height: rem(300px);
-    }
+    } */
   
   }
 }
