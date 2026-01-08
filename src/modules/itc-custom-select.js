@@ -125,13 +125,13 @@ export default {
     if (btn) {
       if (isUkr) {
         btn.dataset.index = '1';
-        btn.dataset.value = 'ukr';
-        btn.textContent = 'ukr';
+        btn.dataset.value = 'Ukr';
+        btn.textContent = 'Ukr';
       } else {
         // по умолчанию index
         btn.dataset.index = '0';
-        btn.dataset.value = 'index';
-        btn.textContent = 'index';
+        btn.dataset.value = 'Rus';
+        btn.textContent = 'Rus';
       }
     }
 
