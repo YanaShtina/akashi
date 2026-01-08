@@ -1,5 +1,5 @@
 .payment {
-  margin-bottom: rem(180px);
+  margin-bottom: rem(100px);
 
   @include mobile {
     margin-bottom: rem(80px);
@@ -53,9 +53,9 @@
   }
 
   .card__item {
-    width: calc(rem(557px) - rem(48px)*2);
-    height: calc(rem(610px) - rem(48px)*2);
-    padding: rem(56px);
+    width: 350px;
+    height: 400px;
+    padding: rem(36px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,6 +94,10 @@
       }
     }
 
+    .btn {
+      max-width: 300px;
+    }
+
     &-bg {
       position: absolute;
    
@@ -101,7 +105,7 @@
       background-size: contain;
       width: rem(175px);
       height: rem(175px);
-      top: 50%;
+      top: 40%;
       transform: translateY(-50%);
 
       @include mobile {

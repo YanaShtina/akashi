@@ -16,7 +16,7 @@ scroll.scroll();
 popup.init();
 mask.init();
 accordion.init();
-accordion.init2();
+/* accordion.init2(); */
 slider.init();
 select.init();
 burger.init();

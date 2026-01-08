@@ -30,16 +30,17 @@
 
   &__img {
     position: absolute;
-    width: rem(450px);
-    height: rem(680px);
+    width: 350px;
+    height: auto;
     overflow: hidden;
-    left: rem(-275px);
-    top: rem(-30px);
+    left: rem(-235px);
+    top: 0;
+    border-radius: 35px;
 
     @include mobile {
-      width: rem(144px);
-      height: rem(210px);
-      top: rem(-16px);
+      width: rem(124px);
+      height: auto;
+      top: 00%;
       left: 0;
 
     }

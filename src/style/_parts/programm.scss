@@ -56,7 +56,7 @@ margin-bottom: rem(180px);
 }
 
 &__tarif-item {
-  width: 50%;
+  width: 100%;
   border: 0.5px solid $p-accent-1;
   border-radius: rem(32px);
   padding: rem(24px);
@@ -66,16 +66,16 @@ margin-bottom: rem(180px);
     width: calc(100% - rem(24px));
   }
 
-  &:first-child {
+/*   &:first-child {
     margin-right: rem(70px);
 
     @include mobile {
       margin-right: 0;
       margin-bottom: rem(32px);
     }
-  }
+  } */
 
-  &:last-child {
+/*   &:last-child {
     max-height: max-content;
 
  .programm__tarif-item-descr {
@@ -83,7 +83,7 @@ margin-bottom: rem(180px);
     font-family: $p-font-medium;
   }
  }
-  }
+  } */
 }
 
 &__tarif-item-title {

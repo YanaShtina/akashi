@@ -23,8 +23,8 @@
   color: #722086;
 
   @include mobile {
-    padding: rem(12px) rem(12px);
-    font-size: rem(16px);
+    padding: rem(6px) rem(4px);
+    font-size: rem(14px);
     justify-content: center
   }
 }

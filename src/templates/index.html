@@ -79,7 +79,7 @@
           <div class="hero__left">
             <div class="hero__left-img rus">
               <img class="desc" src="../img/hero-title-rus-desk.png" alt="хроники" loading="lazy">
-              <img class="mob" src="../img/hero-title-rus-mob.png" alt="хроники" loading="lazy">
+              <img class="mob" src="../img/hero-title-rus-mob.png" alt="хроники" loading="lazy" max-width="370px" max-heigth="250px">
             </div>
   
             <div class="hero__left-text">
@@ -89,7 +89,7 @@
               <div class="hero__left-text-title">Марины Емцовой</div>
               <div class="hero__left-text-order">«Целитель Акаши»</div>
   
-              <div class="hero__left-text-order _mob"> Старт курса 2 &#160;ноября&#160;2024</div>
+              <div class="hero__left-text-order _mob"> Старт курса 21 &#160;февраля&#160;2026</div>
               <button class="btn btn-blue hero__btn js-scroll" data-target="programm">Программа</button>
             </div>
           </div>
@@ -145,13 +145,14 @@
       <section class="programm">
         <div class="programm__container container">
           <h2 class="programm__title h2">Программа курса</h2>
-          <div class="programm__subtitle">Тут общее описание для обоих курсов</div>
+          <p class="programm__subtitle">По окончанию курса вы сможете полноценно проводить с&#160;клиентами сессии  за&#160;установленную вами плату. <br>
+            В вашем арсенале будут техники гипнотерапии, психологии, энергопрактики</p>
 
             <div class="programm__tarif-list">
                 <div class="programm__tarif-item base">
-                  <h4 class="programm__tarif-item-title">Тариф базовый</h4>
-                  <div class="programm__tarif-item-descr">По окончанию курса вы сможете полноценно проводить с&#160;клиентами сессии  за&#160;установленную вами плату. <br>
-                    В вашем арсенале будут техники гипнотерапии, психологии, энергопрактики</div>
+              <!--     <h4 class="programm__tarif-item-title">Тариф базовый</h4> -->
+               <!--    <div class="programm__tarif-item-descr">По окончанию курса вы сможете полноценно проводить с&#160;клиентами сессии  за&#160;установленную вами плату. <br>
+                    В вашем арсенале будут техники гипнотерапии, психологии, энергопрактики</div> -->
 
                   <div class="accordion programm__list _base programm-base">
                     <div class="accordion-item">
@@ -289,9 +290,25 @@
         
                       </div>
                     </div>
+
+                    <div class="accordion-item">
+                      <button id="accordion-button-11" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 11.   </span>Ченнелинг <br> (местности, энергий, цивилизаций)</span><span class="icon" aria-hidden="true"></span></button>
+                      <div class="accordion-content">
+                        <ul class="accordion-content-list">
+                          <li class="accordion-content-item">Введение в ченнелинг</li>
+                          <li class="accordion-content-item"> Работа через поле Акаши с денежным запросом</li>
+                          <li class="accordion-content-item">Ченнелинг местности и получение ресурсов местности. Контракты с местностью</li>
+                          <li class="accordion-content-item">Ченнелинг с высшими Духовными Сущностями.</li>
+                          <li class="accordion-content-item">Запрос загрузок от Высших</li>
+                          <li class="accordion-content-item">Ченнелинг Законов Вселенной</li>
+                        </ul>
+        
+                          <div class="accordion-content-add">Проведем работу с энергиями, научитесь двигать денежные Энергопроцессы</div>
+                      </div>
+                    </div>
         
                     <div class="accordion-item">
-                      <button id="accordion-button-11" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 11.   </span>Выпускной</span><span class="icon" aria-hidden="true"></span></button>
+                      <button id="accordion-button-12" aria-expanded="false"><span class="accordion-title"><span class="accent">Урок 12.   </span>Выпускной</span><span class="icon" aria-hidden="true"></span></button>
                       <div class="accordion-content">
                         <ul class="accordion-content-list">
                           <li class="accordion-content-item">Подведение итогов</li>
@@ -307,7 +324,7 @@
                   
                 </div>
 
-                <div class="programm__tarif-item pro">
+              <!--   <div class="programm__tarif-item pro">
                   <h4 class="programm__tarif-item-title">Тариф ПРО</h4>
                   <div class="programm__tarif-item-descr">В тариф входят все <span>11 уроков из тарифа "Базовый" </span><br> + <br><span>6 дополнительных уроков</span> &#128317;</div>
 
@@ -398,7 +415,7 @@
 
                     <button class="programm__btn btn btn-blue js-scroll" data-target="payment">Забронировать место</button>
 
-                </div>
+                </div> -->
             </div>
   
 
@@ -413,7 +430,7 @@
           <h2 class="about__title h2">Об авторе курса</h2>
   
           <div class="about__content">
-            <img class="about__img" src="../img/about-img.png" loading="lazy"  alt="автор">
+            <img class="about__img" src="../img/newfoto.jpg" loading="lazy"  alt="автор">
             <div class="about__txt">
               <h4 class="about__txt-title">Приветствую Вас!</h4>
               <p class="about__txt-show">Я - Марина Емцова, психолог и Проводник Проводников, 
@@ -919,21 +936,23 @@
 
           <div class="payment__subtitle"> Пришлите мне свое фото в любом мессенджере - я посмотрю ваше и поле и дам обратную связь.</div>
 
-          <div class="card__list">
+          <div class="card__item-price">28 000 грн</div>
+
+          <button class="btn btn-blue card__btn open-popup" data-type='main'>Оставить заявку</button></div>
+
+      <!--     <div class="card__list">
             <div class="card__item">
-              <h4 class="card__item-title">Оплата тарифа "Базовый"</h4>
+              <h4 class="card__item-title">Оплата курса</h4>
               <div class="card__item-bg _1">
               </div>
 
+ -->
+          <!--     <div class="card__item-bottom">    -->
+         <!--        <div class="card__item-price-full">600 €</div> -->
+          
+           <!--  </div> -->
 
-              <div class="card__item-bottom">   
-                <div class="card__item-price-full">600 €</div>
-              <div class="card__item-price">560 €</div>
-
-              <button class="btn btn-blue card__btn open-popup" data-type='main'>Оставить заявку</button></div>
-            </div>
-
-            <div class="card__item">
+           <!--  <div class="card__item">
               <h4 class="card__item-title">Оплата тарифа "Про"</h4>
               <div class="card__item-bg _2">
               </div>
@@ -944,12 +963,12 @@
               <div class="card__item-price">890 €</div>
 
               <button class="btn btn-blue card__btn open-popup" data-type='main'>Оставить заявку</button></div>
-            </div>
+            </div> -->
 
 
           </div>
 
-          <div class="payment__proOnly"> Для учеников, кто проходил тариф "Базовый" есть возможность приобрести 6 уроков тарифа "Про" отдельно. Для информации, напишите, пожалуйста, сообщение в любом удобном мессенджере</div>
+         <!--  <div class="payment__proOnly"> Для учеников, кто проходил тариф "Базовый" есть возможность приобрести 6 уроков тарифа "Про" отдельно. Для информации, напишите, пожалуйста, сообщение в любом удобном мессенджере</div> -->
           <div class="payment__proOnly-btn open-popup" data-type='main'>Контакты</div>
         </div>
       </section>
@@ -1044,7 +1063,7 @@
         </div>
 
 
-        <a class="footer__dev-link" href="https://t.me/s_iana" target="_blank">Разработка сайта  Yana Aydin</a>
+        <a class="footer__dev-link" href="https://t.me/s_iana" target="_blank">Разработка сайта  Yana S</a>
       </div>
     </footer> 
 

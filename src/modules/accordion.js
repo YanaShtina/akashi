@@ -21,7 +21,7 @@ export default {
     items.forEach(item => item.addEventListener('click', toggleAccordion));
   },
 
-  init2() {
+ /*  init2() {
     
     const pro = document.querySelector(".programm-pro");
     const items = pro.querySelectorAll(".accordion button");
@@ -41,6 +41,6 @@ export default {
     }
     
     items.forEach(item => item.addEventListener('click', toggleAccordion));
-  }
+  } */
 
 }
