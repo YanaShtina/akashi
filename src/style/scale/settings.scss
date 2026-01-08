@@ -1,0 +1,22 @@
+@use "sass:math";
+@use "sass:meta";
+
+// Base font size used for rem/em conversions
+$root-font-size: 100 !default;
+$browser-context: $root-font-size !default;
+
+// Remove the unit of a length
+@function strip-unit($number) {
+  @if meta.type-of($number) == 'number' and not math.is-unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return math.div(strip-unit($pixels), strip-unit($context)) * 1em;
+}
+
+@function rem($pixels, $context: $browser-context) {
+  @return math.div(strip-unit($pixels), strip-unit($context)) * 1rem;
+}

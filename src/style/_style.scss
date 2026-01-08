@@ -1,0 +1,467 @@
+@use 'sass:math';
+@import 'scale/scale.scss'; 
+@import 'scale/settings.scss'; 
+@import 'scale/breakpoints.scss'; 
+
+$root-font-size: 100;
+$wide-desktop-width: 1600px;
+$desktop-width: 1100px;
+$tablet-width: 700px;
+$mobile-width: 360px;
+
+html {
+  --root-font-size: #{$root-font-size}px;
+  font-size: #{$root-font-size}px;
+
+  $min-screen-width: 700;
+  $mid-screen-width: 1600;
+  
+  @include css-lock(#{calc(math.div($min-screen-width * 100, $mid-screen-width))}, 100, $min-screen-width, $mid-screen-width);
+  
+
+
+  @include mobile {
+    $min-screen-width: 300;
+    $mid-screen-width: 360;
+    $max-screen-width: 700;
+
+    @include css-lock-full(#{calc(math.div($min-screen-width * $root-font-size, $mid-screen-width))}, $root-font-size, #{calc(math.div($max-screen-width * $root-font-size, $mid-screen-width))}, $min-screen-width, $mid-screen-width, $max-screen-width);
+  }
+}
+
+
+main {
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main, header, footer {
+  /* overflow: hidden; */
+}
+
+svg {
+  display: inline-block;
+/*   width: 100%;
+  height: 100%; */
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: $p-font-regular;
+  font-size: rem(20px);
+  line-height: 130%;
+  color:  $p-text;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  letter-spacing: rem(-1px);
+  background-color: #F1F1F1;
+  width: 100%;
+
+ 
+
+  &.active {
+   
+
+    main {
+      position: relative;
+   
+
+      &::after {
+        content: '';
+        position: absolute;
+        background: rgba(1, 5, 13, 0.7);
+        backdrop-filter: blur(rem(7px));
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+
+  }
+}
+
+.container {
+  max-width: rem(1600px);
+  margin: 0 auto;
+  padding: 0 rem(70px);
+
+
+  @include mobile {
+    padding: 0 rem(16px);
+    max-width: calc(100% - rem(32px));
+  }
+}
+
+.h1 {
+  font-family: $p-font-bold;
+  font-weight: 700;
+  font-size: rem(72px);
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  margin-bottom: rem(34px);
+  max-width: rem(960px);
+  color: #fff;
+
+  @include mobile {
+    font-family: $p-font-regular;
+    font-size: rem(28px);
+    font-weight: 400;
+    margin-bottom: rem(10px);
+    color: #1B1F28;
+  }
+}
+
+.h2 {
+  font-family: $p-font-title;
+  font-size: rem(60px);
+  line-height: 110%;
+  text-align: center;
+  margin-bottom: rem(120px);
+  
+
+  @include mobile  {
+    font-family: $p-font-title;
+    font-size: rem(28px);
+    line-height: rem(34px);
+    margin-bottom: rem(36px);
+  }
+}
+
+.h3 {
+  font-family: $p-font-regular;
+  font-size: rem(40px);
+  line-height: rem(46px);
+
+  @include mobile  {
+    font-family: $p-font-regular;
+    font-size: rem(20px);
+    line-height: rem(26px);
+    margin-bottom: rem(4px);
+  }
+}
+
+
+.middle {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: rem(24px);
+  height: rem(62px);
+  font-size: rem(18px);
+  line-height: 110%;
+  font-family: $p-font-bold;
+  width: rem(400px);
+  background: $p-gradient-1;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  &-lili {
+    &:hover {
+      background: $p-gradient-1-hover;
+    }
+
+  }
+
+  &-blue {
+    background: $p-gradient-2;
+
+    &:hover {
+      background: $p-gradient-2-hover;
+    }
+  }
+
+
+ @include mobile {
+    width: rem(215px);
+    width: 100%;
+    height: rem(35px);
+    font-family: $p-font-medium;
+    font-size: rem(14px);
+    line-height: 110%;
+    text-transform: none;
+  } 
+
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.error-text {
+  font-size: rem(12px);
+  margin-left: rem(20px);
+  color: red;
+  display: none;
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: rem(16px);
+  width: rem(554px);
+
+  &.error {
+    .error-text {
+      display: block;
+    }
+
+    .input {
+      outline: 1px solid $p-text;
+    }
+  }
+
+  &.confirm {
+    .input-confirm  {
+      display: block;
+    }
+  }
+
+}
+
+
+.input {
+  border: none;
+  outline: 2px solid #5FABD9;
+  height: rem(60px);
+  font-family: $p-font-regular;
+  font-size: rem(18px);
+  line-height: 110%;
+  border-radius: rem(30px);
+  padding-left: rem(20px);
+  vertical-align: middle;
+  width: calc(100% - rem(20px));
+  background-color: transparent;
+
+
+  &._textarea {
+    height: rem(138px);
+    resize: none;
+    line-height: 110%;
+    overflow: inherit;
+    padding: rem(20px);
+    width: calc(100% - rem(40px));
+  }
+
+  &::placeholder {
+    font-family: $p-font-regular;
+    font-size: rem(16px);
+    line-height: rem(22px)
+  }
+
+  @include mobile {
+    font-size: rem(14px);
+    line-height: rem(18px);
+  }
+}
+
+.desc {
+  @include mobile {
+    display: none;
+  }
+}
+
+.mob {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.burger {
+  width: rem(70px);
+  height: rem(70px);
+  border-radius: 100%;
+  border: rem(1px) solid #fff;
+  position: relative;
+  z-index: 55;
+  margin-left: auto;
+  display: none;
+  flex-shrink: 0;
+
+  @include mobile {
+    display: block;
+  }
+
+  @include mobile {
+    width: rem(40px);
+    height: rem(40px);
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+  }
+
+/*   &:hover {
+    cursor: pointer;
+    background-color: #1B1F28;
+    transition: all 0.3s ease-in;
+
+
+    span {
+      background-color: #fff;
+      transition: all 0.3s ease-in;
+    }
+  } */
+
+  span {
+    display: inline-block;
+    height: rem(2px);
+    width: 100%;
+    border-radius: rem(50px);
+    position: absolute;
+    transition: all 0.3s ease-in;
+    background-color: #fff;
+    
+     @include mobile {
+      background-color: #fff;
+      height: rem(2px);
+      width: 100%;
+      left: 0;
+    } 
+    &:nth-child(1) {
+
+      @include mobile {
+        top: 50%;
+        transform: translateY(calc((-50%) - rem(8px)));
+      } 
+    }
+
+    &:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include mobile {
+        top: 50%;
+        transform: translateY(-50%);
+      } 
+    }
+
+    &:nth-child(3) {
+
+     @include mobile {
+        width: 70%;
+        top: 50%;
+        transform: translateY(calc((-50%) + rem(8px)));
+      } 
+    }
+  }
+
+  &.active { 
+    span {
+      transition: all 0.3s ease-in;
+      top: rem(27px);
+      left: rem(15px);
+      color: white;
+      background-color: #fff;
+  
+      &:nth-child(1) {
+        transform: rotate(-45deg);
+
+
+        @include mobile {
+          left: rem(12px);
+          top: rem(22px);
+          width: rem(25px);
+        }
+
+        @include mobile {
+          left: rem(7px);
+          top: rem(18px);
+        }
+      }
+  
+      &:nth-child(2) {
+        opacity: 0;
+        height: 0;
+        visibility: hidden;
+      }
+  
+      &:nth-child(3) {
+        transform: rotate(45deg);
+        width: rem(25px);
+
+
+        @include mobile {
+          left: rem(7px);
+          top: rem(18px);
+        }
+      }
+    }
+  }
+ }
+
+ select {
+  outline: none;
+  border: none;
+  width: rem(120px);
+  padding: rem(5px) rem(10px);
+  border-radius: rem(50px);
+ }
+
+ .accent {
+  color: $p-accent-2;
+ }
+
+ .swiper-pagination {
+  .swiper-pagination-bullet {
+    width: rem(11px);
+    height: rem(11px);
+    background: linear-gradient(180deg, #B381E0 0%, #5FABD9 100%);
+  }
+
+  .swiper-pagination-bullet-active {
+    width: rem(35px);
+    background: linear-gradient(180deg, #B381E0 0%, #5FABD9 100%);
+    border-radius: rem(70px);
+  }
+
+ }
+
+ .swiper-pagination-mob {
+  display: none;
+  position: absolute;
+  top: rem(48px) !important;
+  left: 50% !important;
+  right: initial !important;
+  bottom: initial !important;
+  transform: translateX(-50%);
+  height: max-content;
+  width: max-content !important;
+
+  @include mobile {
+    display: flex;
+  }
+
+  .swiper-pagination-bullet {
+    width: rem(11px);
+    height: rem(11px);
+    background: linear-gradient(180deg, #B381E0 0%, #5FABD9 100%);
+  }
+
+  .swiper-pagination-bullet-active {
+    width: rem(35px);
+    background: linear-gradient(180deg, #B381E0 0%, #5FABD9 100%);
+    border-radius: rem(70px);
+  }
+ }
+
+
+
+

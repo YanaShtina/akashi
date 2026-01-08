@@ -1,0 +1,136 @@
+.reviews  {
+  margin-bottom: rem(180px);
+  position: relative;
+
+  @include mobile {
+    margin-bottom: rem(80px);
+    overflow: hidden;
+  }
+
+  
+  &__title {
+    color: $p-accent-2;
+
+    @include mobile {
+      margin-bottom: rem(56px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    // max-height: rem(1000px);
+    overflow: hidden;
+    margin: 0 auto;
+    justify-content: center;
+   
+
+  
+    .column {
+      margin-right: rem(32px);
+      &:last-child {
+        margin-right: 0;
+      }
+  
+    }
+  }
+
+  &__item {
+    width: rem(305px);
+    letter-spacing: 0;
+    overflow: hidden;
+    margin-bottom: rem(15px);
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-height: rem(250px);
+      object-fit: cover;
+      border-radius: rem(30px);
+    }
+
+    &._txt {
+      padding: rem(15px);
+      width: calc(rem(305px) - rem(30px));
+      background-color: #fff;
+      font-size: rem(12px);
+      line-height: 110%;
+      border-radius: rem(30px);
+    }
+
+    &._svg {
+      img  {
+        object-fit: contain;
+      }
+    }
+  }
+
+.swiper {
+  overflow: visible !important;
+
+  &.desc {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.swiper-button-prev {
+  top: rem(500px);
+  left: rem(56px);
+  color: #5FABD9;
+
+  &.desc {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.swiper-button-next {
+  top: rem(500px);
+  right: rem(56px);
+  color: #5FABD9;
+
+  &.desc {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.swiper-pagination {
+  top: rem(120px);
+  height: max-content;
+
+  &.desc {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: rem(36px);
+}
+
+.swiper-mob {
+  display: none;
+  overflow: hidden !important;
+  position: relative;
+  
+
+  @include mobile {
+    display: block;
+  }
+
+  .reviews__item {
+    margin-right: 0;
+    width: calc(100% - rem(30px));
+  }
+
+  .swiper-wrapper {
+    // height: 100% !important;
+  }
+}
+}

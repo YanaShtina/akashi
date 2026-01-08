@@ -1,0 +1,121 @@
+$b: '.programm';
+
+#{$b} {
+margin-bottom: rem(180px);
+
+@include mobile {
+  margin-bottom: rem(80px);
+}
+
+
+&__container {
+  width: rem(1146px);
+  margin: 0 auto;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+&__title {
+  color: $p-accent-2;
+  margin-bottom: rem(32px);
+
+  @include mobile {
+    margin-bottom: rem(24px);
+  }
+}
+
+
+&__subtitle {
+  font-family: $p-font-regular;
+  font-size: rem(16px);
+  text-align: center;
+  line-height: 120%;
+  max-width: rem(500px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: rem(80px);
+
+  @include mobile {
+    font-size: rem(14px);
+    margin-bottom: rem(32px);
+  }
+}
+
+&__tarif-list {
+  display: flex;
+  align-items: flex-start;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+
+
+}
+
+&__tarif-item {
+  width: 50%;
+  border: 0.5px solid $p-accent-1;
+  border-radius: rem(32px);
+  padding: rem(24px);
+
+  @include mobile {
+    padding: rem(12px);
+    width: calc(100% - rem(24px));
+  }
+
+  &:first-child {
+    margin-right: rem(70px);
+
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: rem(32px);
+    }
+  }
+
+  &:last-child {
+    max-height: max-content;
+
+ .programm__tarif-item-descr {
+  span {
+    font-family: $p-font-medium;
+  }
+ }
+  }
+}
+
+&__tarif-item-title {
+  font-family: $p-font-title;
+  font-size: rem(42px);
+  line-height: 110%;
+  text-align: center;
+  margin-bottom: rem(24px);
+  color:$p-accent-2;
+
+  @include mobile {
+    font-size: rem(32px);
+  }
+}
+
+&__tarif-item-descr {
+  text-align: center;
+  margin-bottom: rem(32px);
+  font-size: rem(18px);
+
+  @include mobile {
+    font-size: rem(15px);
+    margin-bottom: rem(24px);
+  }
+}
+
+&__list {
+  margin-bottom: rem(32px);
+
+  @include mobile {
+    margin-bottom: rem(32px);
+  }
+
+}
+}

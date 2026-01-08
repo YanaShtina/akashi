@@ -1,0 +1,41 @@
+.faq {
+  margin-bottom: rem(180px);
+
+  @include mobile {
+    margin-bottom: rem(80px);
+  }
+  &__title {
+    color: $p-accent-2;
+  }
+
+  .accordion-title {
+    @include mobile {
+      font-size: rem(14px);
+      font-family: $p-font-bold;
+      display: inline-block;
+      width: 90%;
+    }
+  }
+
+  .accordion-item {
+    position: relative;
+    padding-left: rem(25px);
+
+    @include mobile {
+      padding-left: 0;
+      font-size: rem(14px);
+
+
+    }
+  }
+
+  .accordion-content-item {
+    @include mobile {
+      margin-bottom: rem(16px) !important;
+
+      &::before {
+        top: rem(12px);
+      }
+    }
+  }
+}

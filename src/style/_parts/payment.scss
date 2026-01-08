@@ -1,0 +1,218 @@
+.payment {
+  margin-bottom: rem(180px);
+
+  @include mobile {
+    margin-bottom: rem(80px);
+  }
+
+  &__title {
+    color: $p-accent-2;
+    margin-bottom: rem(38px);
+  }
+
+  &__subtitle {
+    text-align: center;
+    max-width: rem(700px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem(80px);
+    line-height: 120%;
+
+    &:nth-child(2) {
+      margin-bottom: rem(28px);
+
+      @include mobile {
+        font-size: rem(14px);
+        
+        margin-bottom: rem(14px);
+      }
+    }
+
+    @include mobile {
+      margin-bottom: rem(60px);
+      max-width: rem(300px);
+      font-size: rem(16px);
+      font-size: rem(14px);
+      margin-bottom: rem(14px);
+    }
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  .card__list {
+    margin-bottom: rem(56px);
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .card__item {
+    width: calc(rem(557px) - rem(48px)*2);
+    height: calc(rem(610px) - rem(48px)*2);
+    padding: rem(56px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url('../../img/rectangle.svg');
+    background-size: 100% 100%;
+
+    @include mobile {
+      padding: rem(24px);
+      width: calc(100% - rem(24px)*2);
+      height: calc(rem(360px) - rem(24px)*2);
+      border: 1px solid $p-accent-2;
+      background-image: none;
+      border-radius: rem(30px);
+    }
+
+    &:first-child {
+      margin-right: rem(32px);
+
+      @include mobile {
+        margin-right: 0;
+        margin-bottom: rem(24px);
+      }
+    } 
+
+
+
+    &-title {
+      font-size: rem(38px);
+      line-height: 110%;
+      font-family: $p-font-medium;
+      text-align: center;
+
+      @include mobile {
+        font-size: rem(24px);
+      }
+    }
+
+    &-bg {
+      position: absolute;
+   
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: rem(175px);
+      height: rem(175px);
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include mobile {
+        width: rem(130px);
+        height: rem(130px);
+      }
+
+      &._1 {
+        background-image: url('../../img/payment-1.svg');
+      }
+
+      &._2 {
+        background-image: url('../../img/payment-2.svg');
+        width: rem(140px);
+        height: rem(140px);
+        top: 47%;
+
+        @include mobile {
+          width: rem(110px);
+          height: rem(110px);
+        }
+      }
+    }
+
+    &-bottom {
+      margin-top: auto;
+      position: relative;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    &-price-full {
+      position: absolute;
+      font-size: rem(22px);
+      line-height: 110%;
+      font-family: $p-font-regular;
+      color: $p-accent-2;
+      top: rem(22px);
+      left: rem(42px);
+
+      @include mobile {
+        font-size: rem(14px);
+        top: rem(12px);
+        left: rem(45px);
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: rem(80px);
+        height: 1px;
+        background-color: $p-accent-2;
+        top: rem(12px);
+        left: rem(-12px);
+        transform: rotate(15deg);
+
+        @include mobile {
+          width: rem(40px);
+          top: rem(8px);
+          left: rem(-2px);
+        }
+      }
+
+ 
+    }
+
+    &-price {
+      font-size: rem(48px);
+      line-height: 110%;
+      font-family: $p-font-medium;
+      text-align: center;
+      margin-bottom: rem(24px);
+
+      @include mobile {
+        font-size: rem(28px);
+      }
+    }
+  }
+
+  &__proOnly {
+    max-width: rem(700px);
+    font-family: $p-font-regular;
+    line-height: 140%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @include mobile {
+      font-size: rem(16px)
+    }
+     
+    
+  }
+
+  &__proOnly-btn {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $p-font-medium;
+    width: max-content;
+    color: $p-accent-2;
+    border-bottom: 1px solid $p-accent-2;
+    margin-top: rem(24px);
+    @include mobile {
+      margin-top: rem(12px);
+      font-size: rem(14px)
+    }
+
+    &:hover { 
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,274 @@
+$b: '.for';
+
+#{$b} {
+  margin-bottom: rem(180px);
+
+  @include mobile {
+    margin-bottom: rem(80px);
+  }
+
+  &__title {
+    color: $p-accent-1;
+  }
+
+  &__img {
+    width: rem(500px);
+    height: rem(500px);
+    margin: 0 auto;
+    padding: rem(30px);
+    border: 1px dashed $p-accent-2;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: rem(80px);
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+  
+  &__content {
+    position: relative;
+    width: rem(1130px);
+    margin: 0 auto;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__list {
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: rem(32px);
+    }
+
+    &.ukr {
+      .for__item._4 {
+        right: rem(48px);
+
+        @include mobile {
+          right: 0;
+        }
+      }
+    }
+
+  }
+
+  &__item {
+    position: absolute;
+    max-width: rem(280px);
+    font-family: $p-font-regular;
+    font-size: rem(16px);
+    line-height: 110%;
+    top: 0;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: rem(13px);
+      height: rem(13px);
+      background: linear-gradient(180deg, #5FABD9 23.44%, #B381E0 100%);;
+      border-radius: 100%;
+
+      @include mobile {
+        width: rem(8px);
+        height: rem(8px);
+        top: 0;
+      }
+    }
+
+    @include mobile {
+      position: relative;
+      top: initial;
+      right: initial;
+      left: initial;
+      font-size: rem(14px);
+      padding-left: rem(16px);
+      margin-bottom: rem(24px);
+      letter-spacing: 0;
+    }
+
+    &._6 {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      &::before {
+        right: rem(-10px);
+        top: 50%;
+        transform: translateY(-50%);
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: translateY(0);
+      }
+    }
+
+    &._5 {
+      top: initial;
+      bottom: 0;
+      transform: translateY(-50%);
+      left: rem(147px);
+      width: rem(250px);
+
+      &::before {
+        right: rem(-10px);
+        top: 50%;
+        transform: translateY(-50%);
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: translateY(0);
+      }
+    }
+
+    &._4 {
+      top: initial;
+      bottom: 0;
+      transform: translateY(-50%);
+      left: initial;
+      right: rem(28px);
+      width: rem(300px);
+
+      &::before {
+        right: initial;
+        left: rem(-30px);
+        top: 10%;
+        transform: translateY(-50%);
+      
+        
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: translateY(0);
+      }
+    }
+
+    &._3 {
+      top: 50%;
+      bottom: initial;
+      transform: translateY(-50%);
+      left: initial;
+      right: rem(-18px);
+      width: rem(300px);
+
+      &::before {
+        right: initial;
+        left: rem(-30px);
+        top: 10%;
+        transform: translateY(-50%);
+      
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: translateY(0);
+      }
+    }
+
+    &._2 {
+      top: 0;
+      bottom: initial;
+      left: initial;
+      right: rem(50px);
+      width: rem(300px);
+
+      &::before {
+        right: initial;
+        left: rem(-36px);
+        top: 100%;
+        transform: translateY(-50%);
+      
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+        transform: translateY(0);
+      }
+    }
+
+    &._1 {
+      top: 0;
+      left: rem(75px);
+      max-width: rem(300px);
+
+      &::before {
+        top: 100%;
+        right: rem(-9px);
+        transform: translateY(-50%);
+
+        @include mobile {
+          right: initial;
+          left: 0;
+          top: 50%;
+        }
+      }
+
+      @include mobile {
+        position: relative;
+        top: initial;
+        right: initial;
+        left: initial;
+      }
+    }
+
+
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+
+}

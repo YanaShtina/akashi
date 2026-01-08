@@ -1,0 +1,191 @@
+$bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #03b5d2;
+
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid $lightgray;
+    button[aria-expanded='true'] {
+      border-bottom: 1px solid $p-accent-2;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: rem(20px) 0;
+
+    color: $text;
+    font-size: rem(1px);
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+
+    @include mobile {
+      font-size: rem(14px);
+      padding: rem(16px) 0;
+      padding-right: rem(5px);
+    }
+
+    &:hover, &:focus {
+      cursor: pointer;
+      color: $p-accent-2;;
+      &::after {
+        cursor: pointer;
+        color: $p-accent-2;;
+        border: 1px solid $p-accent-2;
+      }
+
+      .icon {
+        color: $p-accent-2;
+        transition: all 0.3s ease-in;
+        &::after,
+        &::before {
+          transition: all 0.3s ease-in;
+          background-color: $p-accent-2;
+        }
+      }
+    }
+    .accordion-title {
+      color: $p-text;
+      font-size: rem(16px);
+
+      font-family: $p-font-regular;
+      line-height: 120%;
+      .accent {
+        font-weight: 700;
+      }
+
+      @include mobile {
+        font-size: rem(14px);
+        font-weight: $p-font-bold;
+      }
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: rem(18px);
+      right: 0;
+      width: rem(25px);
+      height: rem(25px);
+      border: 1px solid;
+      border-radius: 100%;
+      color: $p-accent-2;
+      transition: all 0.3s ease-in;
+
+      @include mobile {
+        width: rem(15px);
+        height: rem(15px);
+      }
+      &::before {
+        transition: all 0.3s ease-in;
+        display: block;
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(12px);
+        height: rem(1.5px);
+        background: $p-accent-2;
+
+        @include mobile  {
+          width: rem(8px);
+          height: rem(1px);
+        }
+      }
+      &::after {
+        transition: all 0.3s ease-in;
+        display: block;
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(1.5px);
+        height: rem(12px);
+        background: $p-accent-2;
+
+        @include mobile  {
+          width: rem(1px);
+          height: rem(8px);
+        }
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+    color: $blue;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: rem(1146px);
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+      padding: rem(24px) 0;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    font-size: rem(16px);
+    line-height: 110%;
+
+    &-list {
+      margin-bottom: rem(16px);
+    }
+
+    &-item {
+      padding-left: rem(17px);
+      margin-bottom: rem(8px);
+      position: relative;
+
+      @include mobile {
+        font-size: rem(14px);
+        margin-bottom: rem(4px);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url('../../img/cross.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        width: rem(13px);
+        height: rem(13px);
+
+        @include mobile {
+          width: rem(11px);
+          height: rem(11px);
+  
+        }
+      }
+    }
+
+    &-add {
+      @include mobile {
+        font-size: rem(14px);
+      }
+    }
+  }
+}
