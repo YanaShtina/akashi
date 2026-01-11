@@ -17,6 +17,7 @@ popup.init();
 mask.init();
 accordion.init();
 /* accordion.init2(); */
+accordion.faqAccordionInit()
 slider.init();
 select.init();
 burger.init();
