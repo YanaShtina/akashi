@@ -1,6 +1,7 @@
 export default {
   init() {
     const base = document.querySelector(".programm-base");
+    if (!base) return;
    /*  console.log(base) */
     const items = base.querySelectorAll(".accordion button");
 
@@ -23,6 +24,7 @@ export default {
 
   faqAccordionInit() {
     const faq = document.querySelector('.faq');
+    console.log(faq)
     if (!faq) return;
   
     const items = faq.querySelectorAll('.accordion button');

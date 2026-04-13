@@ -1,5 +1,8 @@
 export default {
   init() {
+    const base = document.querySelector(".itc-select");
+    if (!base) return;
+
     class ItcCustomSelect {
       static EL = 'itc-select';
       static EL_SHOW = 'itc-select_show';

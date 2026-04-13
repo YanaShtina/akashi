@@ -58,6 +58,18 @@ module.exports = {
       template: 'nunjucks-html-loader!./src/templates/ukr.html',
     }), 
 
+    new HtmlWebpackPlugin({
+      filename: 'program.html',
+      inject: 'body',
+      template: 'nunjucks-html-loader!./src/templates/program.html',
+    }), 
+
+    new HtmlWebpackPlugin({
+      filename: 'program_ua.html',
+      inject: 'body',
+      template: 'nunjucks-html-loader!./src/templates/program_ua.html',
+    }), 
+
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),

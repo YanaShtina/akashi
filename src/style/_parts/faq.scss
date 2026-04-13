@@ -8,6 +8,10 @@
     color: $p-accent-2;
   }
 
+  .accordion {
+margin-bottom: rem(32px);
+  }
+
   .accordion-title {
     @include mobile {
       font-size: rem(14px);

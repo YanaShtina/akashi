@@ -7,6 +7,7 @@ import slider  from './modules/slider';
 import select  from './modules/itc-custom-select';
 import burger  from './modules/burger';
 import random  from './modules/random';
+import program  from './modules/program';
 
 
 
@@ -22,6 +23,8 @@ slider.init();
 select.init();
 burger.init();
 random.init();
+program.init();
+
 
 
 

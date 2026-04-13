@@ -1,6 +1,7 @@
 export default {
   init() {
     const formMain = document.querySelector('#form__main');
+    if (!formMain) return;
 
     if(!formMain) return;
 

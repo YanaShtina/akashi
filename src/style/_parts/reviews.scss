@@ -1,6 +1,7 @@
 .reviews  {
   margin-bottom: rem(180px);
   position: relative;
+  margin-top: 40px;
 
   @include mobile {
     margin-bottom: rem(80px);

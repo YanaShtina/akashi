@@ -5,6 +5,7 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 export default {
   init() {
     const burger = document.querySelector('.burger');
+    if (!burger) return;
     const body = document.querySelector('body');
     const nav = document.querySelector('.nav__list');
 
